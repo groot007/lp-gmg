@@ -24,12 +24,16 @@ $(function() {
       curYear = day.getFullYear(),
       firstDate = curYear +'/'+ curMonth +'/16 01:30:20',
       secondDate = curYear +'/'+ curMonth + '/29 12:56:45';
-$('#timer-1').countdown(firstDate, function(event) {
+$('#timer-1').countdown(firstDate).on('update.countdown', function(event) {
   $(this).html(event.strftime("%D д. | %H ч.  | %M мин. | %S сек."));
-});
-$('#timer-2').countdown(secondDate, function(event) {
+}).on('finish.countdown', function(){
+  $('#timer-1').html("Действие акции закончилось")
+});;
+$('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
   $(this).html(event.strftime('%D д. | %H ч. | %M мин. | %S сек.'));
-});
+}).on('finish.countdown', function(){
+  $('#timer-2').html("Действие акции закончилось")
+});;
 
 
   $(".phone-num").each(function(){
@@ -90,6 +94,7 @@ $('#timer-2').countdown(secondDate, function(event) {
     infinite: true,
     draggable: false,
     swipe: false,
+    waitForAnimate: false
   });
   var menu = $(".top-head nav");
   $(".resp-mnu").on("click", function(e) {
@@ -116,11 +121,14 @@ $('#timer-2').countdown(secondDate, function(event) {
     infinite: true,
     dots: true,
     arrows: true,
+    waitForAnimate: false,
     nextArrow: '<i class="fa fa-angle-right"></i>',
     prevArrow: '<i class="fa fa-angle-left"></i>',
     customPaging: function(slider, i) {
-      var thumb = $(slider.$slides[i]).find("img").attr('src').replace(/\.jpg/, "");
-      return '<a><img src="' + thumb + '-mini.jpg"></a>';
+      var slide = $(slider.$slides[i]).find("img").attr('src');
+      var div = slide.replace(/.{1,}\./, "");
+      var thumb = slide.replace(/\..{1,}/, "");
+      return '<a><img src="' + thumb + '-mini.'+ div +'"></a>';
     },
 
     responsive: [{
@@ -139,27 +147,31 @@ $('#timer-2').countdown(secondDate, function(event) {
     target.addClass("active");
     target.closest(".tabs").find(".tab-content").removeClass("active");
     target.closest(".tabs").find("." + content).addClass("active");
+    var section = $(this).closest("section");
     if (content === "tab-content-1") {
-      $(this).closest("section").find(".wrap-outer-s").css("display", "block");
-      $(this).closest("section").find(".wrap-inner-s").css("display", "none");
+      section.find(".wrap-outer-s").css("display", "block");
+      section.find(".wrap-inner-s").css("display", "none");
     } else {
-      $(this).closest("section").find(".wrap-inner-s").css("display", "block");
-      $(this).closest("section").find(".wrap-inner-s .inner").slick("setPosition");
-      $(this).closest("section").find(".wrap-inner-s .inner .subslides").slick("setPosition");
-      $(this).closest("section").find(".wrap-outer-s").css("display", "none");
+      section.find(".wrap-inner-s").css("display", "block");
+      section.find(".wrap-inner-s .inner").slick("setPosition");
+      section.find(".wrap-inner-s .inner .subslides").slick("setPosition");
+      section.find(".wrap-outer-s").css("display", "none");
     }
 
   });
   $(document).on("click", ".tabs .tab-content .partner-inf", function(e) {
     e.preventDefault();
+
     var target = $(e.target);
     target.closest(".tab-content").find(".partner-inf").removeClass("active");
     target.closest(".partner-inf").addClass("active");
-    slideIndex = $(this).closest(".partner-inf").index();
-    if ($(this).closest(".tab-content-1").length) {
-      $(this).closest("section").find(".works-slide").not(".inner").slick("slickGoTo", slideIndex);
+    var slideIndex = target.closest(".partner-inf").index();
+    var sliderOut = target.closest("section").find(".works-slide").not(".inner");
+    var sliderIn = target.closest("section").find(".works-slide.inner");
+    if (target.closest(".tab-content-1").length) {
+      sliderOut.slick("slickGoTo", slideIndex);
     } else {
-      $(this).closest("section").find(".works-slide.inner").slick("slickGoTo", slideIndex);
+      sliderIn.slick("slickGoTo", slideIndex);
     }
 
   })

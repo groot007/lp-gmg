@@ -1400,7 +1400,7 @@ h2{
 			line-height: 20px;
 			margin-top: 0px;
 			display: block;
-			text-align: left;
+			text-align: center;
 
 		}
 		&.active{
@@ -1412,7 +1412,7 @@ h2{
 			}
 			.logo div .other-inf{
 				opacity: 1;
-				margin-top: 15px;
+				margin-top: 10px;
 				height: auto;
 				@include medium{
 				margin-top: 0;
@@ -1440,12 +1440,15 @@ h2{
 				display: table-cell;
 				width: 35%;
 				vertical-align: middle;
-				text-align: left;
+				text-align: center;
 				overflow: hidden;
 				height: 60px;
 				@include small{
 				height: 50px;
 				width: 30%;
+			}
+			@include extraSmall{
+				height: 40px;
 			}
 				img{
 					max-width: 110px;
@@ -2397,8 +2400,18 @@ form{
 		}
 	}
 }
+.works-slide .slick-track{
+
+	.subslides:not(.slick-dotted){
+		margin-top: 45px;
+		@include extraSmall{
+			margin-top: 0;
+		}
+	}
+}
 .slick-initialized .slick-slide{
 	text-align: center;
+
 	&:focus{
 		outline: none;
 	}

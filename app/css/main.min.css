@@ -5002,7 +5002,7 @@ header .mouse-scroll .fa {
   line-height: 20px;
   margin-top: 0px;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .work-part .partner-inf.active {
@@ -5018,7 +5018,7 @@ header .mouse-scroll .fa {
 
 .work-part .partner-inf.active .logo div .other-inf {
   opacity: 1;
-  margin-top: 15px;
+  margin-top: 10px;
   height: auto;
 }
 
@@ -5032,7 +5032,7 @@ header .mouse-scroll .fa {
   display: table-cell;
   width: 35%;
   vertical-align: middle;
-  text-align: left;
+  text-align: center;
   overflow: hidden;
   height: 60px;
 }
@@ -5873,6 +5873,10 @@ form button {
 
 form button:hover {
   background-color: #ffc166;
+}
+
+.works-slide .slick-track .subslides:not(.slick-dotted) {
+  margin-top: 45px;
 }
 
 .slick-initialized .slick-slide {
@@ -8426,6 +8430,10 @@ form button:hover {
     margin: 50px auto 10px auto;
   }
 
+  .work-part .partner-inf .logo .picture {
+    height: 40px;
+  }
+
   .adv-format .tab-content .example-block {
     height: auto;
   }
@@ -8509,6 +8517,10 @@ form button:hover {
 
   h2.underline.light {
     font-size: 24px;
+  }
+
+  .works-slide .slick-track .subslides:not(.slick-dotted) {
+    margin-top: 0;
   }
 
   .message {
