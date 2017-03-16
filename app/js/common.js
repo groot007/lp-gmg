@@ -149,7 +149,10 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
     target.closest(".tabs").find("." + content).addClass("active");
     var section = $(this).closest("section");
     if (content === "tab-content-1") {
+
       section.find(".wrap-outer-s").css("display", "block");
+      section.find(".wrap-outer-s .works-slide").slick("setPosition");
+      section.find(".wrap-outer-s .works-slide .subslides").slick("setPosition");
       section.find(".wrap-inner-s").css("display", "none");
     } else {
       section.find(".wrap-inner-s").css("display", "block");
