@@ -27,12 +27,14 @@ $(function() {
 $('#timer-1').countdown(firstDate).on('update.countdown', function(event) {
   $(this).html(event.strftime("%D д. | %H ч.  | %M мин. | %S сек."));
 }).on('finish.countdown', function(){
-  $('#timer-1').html("Действие акции закончилось")
+  curMonth++;
+  $('#timer-1').countdown(curYear +'/'+ curMonth +'/16 01:30:20')
 });;
 $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
   $(this).html(event.strftime('%D д. | %H ч. | %M мин. | %S сек.'));
 }).on('finish.countdown', function(){
-  $('#timer-2').html("Действие акции закончилось")
+  curMonth++;
+  $('#timer-2').countdown(curYear +'/'+ curMonth + '/29 12:56:45')
 });;
 
 
