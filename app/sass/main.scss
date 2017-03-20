@@ -1339,6 +1339,12 @@ h2{
 		// position: absolute;
 	}
 }
+.five-items{
+	margin-top: 100px;
+	@include extraSmall{
+		margin-top: 0;
+	}
+}
 .tram{
 
 }
@@ -2264,7 +2270,8 @@ h2{
 }
 .tabs{
 		width: 420px;
-		height: 500px;
+		height: auto;
+		margin-bottom: 70px;
 		position: relative;
 		@include medium{
 			width: 360px;
@@ -2716,6 +2723,8 @@ form{
 		}
 		&.hideM{
 			opacity: 0;
+			pointer-events: none;
+			display: none;
 			// animation-name: hideMessage;
 			// animation-duration: 1s;
 			// -webkit-animation-fill-mode: both;
@@ -3021,7 +3030,9 @@ form{
 	}
 }
 .page-shop{
-
+	.work-part .partner-inf.active{
+		height: auto;
+	}
 	header{
 		.parallax-bg{
 		position: absolute;

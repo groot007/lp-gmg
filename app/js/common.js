@@ -208,7 +208,7 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
   var timer;
   var hideTimer;
   $(document).on("mouseleave mouseenter", function(e) {
-    userLeave = (e.type === "mouseleave") ? true : false;
+    // userLeave = (e.type === "mouseleave") ? true : false;
     clearTimeout(hideTimer);
     if (e.type === "mouseleave") {
       clearTimeout(timer);
@@ -221,6 +221,7 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
   });
 
   $(document).on("mouseenter mouseleave mousedown", ".message", function(e) {
+    e.stopPropagation();
     clearTimeout(timer);
         if (e.type === "mouseleave") {
           hideTimer = setTimeout(function(){
