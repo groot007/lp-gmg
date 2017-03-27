@@ -84,6 +84,14 @@ gulp.task('build', function() {
 		]).pipe(gulp.dest('dist/fonts'));
 
 });
+gulp.task('img', () =>
+    gulp.src('app/img/**/*')
+        .pipe(imagemin({
+        	progressive: true,
+        	optimizationLevel: 5,
+        }))
+        .pipe(gulp.dest('app/compimg/'))
+);
 
 gulp.task('deploy', function() {
 
