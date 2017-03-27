@@ -2275,10 +2275,10 @@ h2{
 		position: relative;
 		@include medium{
 			width: 360px;
-			height: 450px;
+			// height: 450px;
 		}
 		@include small{
-			height: 380px;
+			// height: 380px;
 			width: 310px;
 		}
 		@include extraSmall{
@@ -2724,13 +2724,13 @@ form{
 		&.hideM{
 			opacity: 0;
 			pointer-events: none;
-			display: none;
-			// animation-name: hideMessage;
-			// animation-duration: 1s;
-			// -webkit-animation-fill-mode: both;
-			// animation-fill-mode: both;
+			animation-name: hideMessage;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
 		}
 		&.showM{
+			// display: block;
 			pointer-events: auto;
 			animation-name: showMessage;
 			animation-duration: 1s;
@@ -3010,7 +3010,65 @@ form{
 	}
 }
 
+.reviews{
+	padding: 0px 0 50px 0;
+	@include medium{
+		padding:  20px 0 50px 0;
+	}
+	h2{
+		text-transform: uppercase;
+	    position: relative;
+	    font-size: 30px;
+	    text-align: center;
+	    margin-bottom: 30px;
+	    padding-bottom: 20px;
+	    font-weight: 300;
+	    color: #000;
+	    &:after{
+	    	content: "";
+	    	width: 40px;
+	    	height: 3px;
+	    	position: absolute;
+	    	background: $orange;
+	    	left: 50%;
+	    	bottom: 0;
+	    	margin-left: -20px;
+	    }
+	}
+	.gallery{
+		a{
+			display: block;
+			width: 25%;
+			float: left;
+			margin-bottom: 20px;
+			box-sizing: padding-box;
+			text-align: center;
+			padding: 10px;
 
+
+			@include medium{
+				width: 25%;
+			}
+			@include small{
+				width: 50%;
+			}
+			&:hover{
+				img{
+					box-shadow: 0px 0px 15px 1px rgba(0,0,0, .4);
+				}
+			}
+			img{
+				max-width: 100%;
+				display: inline-block;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				transition: all .4s ease-in-out;
+			}
+		}
+
+	}
+
+}
 
 
 // ***************************
@@ -3030,9 +3088,9 @@ form{
 	}
 }
 .page-shop{
-	.work-part .partner-inf.active{
-		height: auto;
-	}
+	// .work-part .partner-inf.active{
+	// 	height: auto;
+	// }
 	header{
 		.parallax-bg{
 		position: absolute;

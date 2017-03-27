@@ -6151,7 +6151,12 @@ form button:hover {
 .message-box.hideM {
   opacity: 0;
   pointer-events: none;
-  display: none;
+  -webkit-animation-name: hideMessage;
+          animation-name: hideMessage;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .message-box.showM {
@@ -6394,8 +6399,55 @@ form button:hover {
   opacity: 0;
 }
 
-.page-shop .work-part .partner-inf.active {
-  height: auto;
+.reviews {
+  padding: 0px 0 50px 0;
+}
+
+.reviews h2 {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  color: #000;
+}
+
+.reviews h2:after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  background: #ff9700;
+  left: 50%;
+  bottom: 0;
+  margin-left: -20px;
+}
+
+.reviews .gallery a {
+  display: block;
+  width: 25%;
+  float: left;
+  margin-bottom: 20px;
+  -webkit-box-sizing: padding-box;
+          box-sizing: padding-box;
+  text-align: center;
+  padding: 10px;
+}
+
+.reviews .gallery a:hover img {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.reviews .gallery a img {
+  max-width: 100%;
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .page-shop header .parallax-bg {
@@ -7769,11 +7821,18 @@ form button:hover {
 
   .tabs {
     width: 360px;
-    height: 450px;
   }
 
   .message {
     margin: 12px 18px 0 35px;
+  }
+
+  .reviews {
+    padding: 20px 0 50px 0;
+  }
+
+  .reviews .gallery a {
+    width: 25%;
   }
 
   .page-shop .calculation.shop textarea {
@@ -7919,7 +7978,6 @@ form button:hover {
   }
 
   .tabs {
-    height: 380px;
     width: 310px;
   }
 
@@ -7972,6 +8030,10 @@ form button:hover {
 
   .wrap-outer-s {
     margin-top: 50px;
+  }
+
+  .reviews .gallery a {
+    width: 50%;
   }
 
   .page-shop .any-work .any-work-wrap .tabs-col {

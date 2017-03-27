@@ -34,9 +34,9 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		online: false,
-		// tunnel: true,
-		// tunnel: "gootex", //Demonstration page: http://projectmane.localtunnel.me
+		// online: false,
+		tunnel: true,
+		tunnel: "gootex", //Demonstration page: http://projectmane.localtunnel.me
 	});
 });
 

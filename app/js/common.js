@@ -1,14 +1,14 @@
-//import("../libs/jquery/dist/jquery.min.js");
-//import("../libs/slick/slick.min.js");
-//import("../libs/niceSelect/jquery.nice-select.min.js");
-//import("../libs/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js");
-//import("../libs/waypoint/jquery.waypoints.min.js");
-//import("../libs/masked-input.min.js");
-//import("../libs/circlefull.min.js");
-//import("../libs/scrollToId/jquery.malihu.PageScroll2id.js");
-//import("../libs/magnific-popup/js/jquery.magnific-popup.min.js");
-//import("../libs/countdown/jquery.countdown.min.js");
-//import("../libs/ZeroClipboard.js");
+// import("../libs/jquery/dist/jquery.min.js");
+// import("../libs/slick/slick.min.js");
+// import("../libs/niceSelect/jquery.nice-select.min.js");
+// import("../libs/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js");
+// import("../libs/waypoint/jquery.waypoints.min.js");
+// import("../libs/masked-input.min.js");
+// import("../libs/circlefull.min.js");
+// import("../libs/scrollToId/jquery.malihu.PageScroll2id.js");
+// import("../libs/magnific-popup/js/jquery.magnific-popup.min.js");
+// import("../libs/countdown/jquery.countdown.min.js");
+// import("../libs/ZeroClipboard.js");
 
 $(window).on('load', function () {
   var $preloader = $('#page-preloader'),
@@ -68,7 +68,25 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
     });
   });
 
-
+  // $(".reviews .gallery").magnificPopup({
+  //   type: 'image',
+  //   delegate: 'a',
+  //   closeOnContentClick: true,
+  //   closeBtnInside: false,
+  //   fixedContentPos: true,
+  //     mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+  //     image: {
+  //       verticalFit: true
+  //     },
+  //     gallery: {
+  //       enabled: true
+  //     },
+  //     zoom: {
+  //       enabled: true,
+  //         duration: 300,
+  //          // don't foget to change the duration also in CSS
+  //       }
+  //     });
   $(".phone").mask("+7(999) 999-99-99");
   $('.subslides').each(function(indx){
     $(this).find(".gallery").magnificPopup({
@@ -86,8 +104,10 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
         },
         zoom: {
           enabled: true,
-            duration: 300 // don't foget to change the duration also in CSS
+            duration: 300, // don't foget to change the duration also in CSS
+
           }
+
         });
   });
 
@@ -106,17 +126,6 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
       menu.addClass("visible");
     }
 
-  });
-
-  $(document).on("click touchend", function(e) {
-    var target = $(e.target);
-    var fa = $(".resp-mnu .fa");
-    if (target.is(fa) || target.closest(".message").length) return;
-    if (message.hasClass("showM") || menu.hasClass("visible")) {
-      message.addClass("hideM").removeClass("showM");
-      menu.removeClass("visible");
-      clearTimeout(timer);
-    }
   });
 
   $(".subslides").slick({
@@ -207,22 +216,37 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
   var userLeave = false;
   var timer;
   var hideTimer;
-  $(document).on("mouseleave mouseenter", function(e) {
-    // userLeave = (e.type === "mouseleave") ? true : false;
-    clearTimeout(hideTimer);
-    if (e.type === "mouseleave") {
-      clearTimeout(timer);
-      message.removeClass("hideM").addClass("showM");
-    } else if (!message.hasClass("hideM")) {
-      timer = setTimeout(function() {
-        message.addClass("hideM").removeClass("showM");
-      }, 3000)
+
+  $(window).on("mouseout mouseenter", function(e) {
+    if (e.relatedTarget === null){
+      userLeave = (e.type === "mouseleave") ? true : false;
+      clearTimeout(hideTimer);
+      if (e.type === "mouseout") {
+        clearTimeout(timer);
+        message.removeClass("hideM").addClass("showM");
+      }
+      else if (!message.hasClass("hideM")) {
+        timer = setTimeout(function() {
+          message.addClass("hideM").removeClass("showM");
+        }, 3000)
+      }
     }
   });
-
-  $(document).on("mouseenter mouseleave mousedown", ".message", function(e) {
+  $(document).on("click touchend", function(e) {
+    var target = $(e.target);
+    var fa = $(".resp-mnu .fa");
+    clearTimeout(timer);
+    if (target.is(fa) || target.closest(".message").length) return;
+    if (message.hasClass("showM") || menu.hasClass("visible")) {
+      message.addClass("hideM").removeClass("showM");
+      menu.removeClass("visible");
+      clearTimeout(timer);
+    }
+  });
+  $(".message").on("mouseenter mouseleave mousedown", function(e) {
     e.stopPropagation();
     clearTimeout(timer);
+    clearTimeout(hideTimer);
         if (e.type === "mouseleave") {
           hideTimer = setTimeout(function(){
             message.removeClass("showM").addClass("hideM");
