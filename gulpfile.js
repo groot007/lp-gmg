@@ -34,7 +34,7 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		// online: false,
+		online: false,
 		tunnel: true,
 		tunnel: "gootex", //Demonstration page: http://projectmane.localtunnel.me
 	});
@@ -51,7 +51,7 @@ gulp.task('sass', function() {
     }))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
-	// .pipe(cleanCSS())
+	.pipe(cleanCSS())
 	.pipe(gulp.dest('app/css'))
 
 	.pipe(browserSync.reload({stream: true}));
@@ -84,14 +84,7 @@ gulp.task('build', function() {
 		]).pipe(gulp.dest('dist/fonts'));
 
 });
-gulp.task('img', () =>
-    gulp.src('app/img/**/*')
-        .pipe(imagemin({
-        	progressive: true,
-        	optimizationLevel: 5,
-        }))
-        .pipe(gulp.dest('app/compimg/'))
-);
+
 
 gulp.task('deploy', function() {
 

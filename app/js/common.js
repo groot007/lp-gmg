@@ -9,16 +9,20 @@
 // import("../libs/magnific-popup/js/jquery.magnific-popup.min.js");
 // import("../libs/countdown/jquery.countdown.min.js");
 // import("../libs/ZeroClipboard.js");
+// import("../libs/lazyload.js");
 
-$(window).on('load', function () {
+$(document).on('ready', function () {
   var $preloader = $('#page-preloader'),
   $spinner   = $preloader.find('.spinner');
   $spinner.fadeOut();
   $preloader.delay(200).fadeOut('slow');
   $(".overlay").addClass("animate");
+  $(".parallax-bg").addClass("anim-parallax");
+
 });
 
 $(function() {
+
   var day = new Date(),
       curMonth = day.getMonth() + 1,
       curYear = day.getFullYear(),
@@ -68,25 +72,25 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
     });
   });
 
-  // $(".reviews .gallery").magnificPopup({
-  //   type: 'image',
-  //   delegate: 'a',
-  //   closeOnContentClick: true,
-  //   closeBtnInside: false,
-  //   fixedContentPos: true,
-  //     mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-  //     image: {
-  //       verticalFit: true
-  //     },
-  //     gallery: {
-  //       enabled: true
-  //     },
-  //     zoom: {
-  //       enabled: true,
-  //         duration: 300,
-  //          // don't foget to change the duration also in CSS
-  //       }
-  //     });
+  $(".reviews .gallery").magnificPopup({
+    type: 'image',
+    delegate: 'a',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    fixedContentPos: true,
+      mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+      image: {
+        verticalFit: true
+      },
+      gallery: {
+        enabled: true
+      },
+      zoom: {
+        enabled: true,
+          duration: 300,
+           // don't foget to change the duration also in CSS
+        }
+      });
   $(".phone").mask("+7(999) 999-99-99");
   $('.subslides').each(function(indx){
     $(this).find(".gallery").magnificPopup({
@@ -132,11 +136,13 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
     infinite: true,
     dots: true,
     arrows: true,
+     slidesToScroll: 1,
+    lazyLoad: 'ondemand',
     waitForAnimate: false,
     nextArrow: '<i class="fa fa-angle-right"></i>',
     prevArrow: '<i class="fa fa-angle-left"></i>',
     customPaging: function(slider, i) {
-      var slide = $(slider.$slides[i]).find("img").attr('src');
+      var slide = $(slider.$slides[i]).find("img").attr('src') || $(slider.$slides[i]).find("img").attr('data-lazy') || $(slider.$slides[i]).find("img").attr('data-original');
       var div = slide.replace(/.{1,}\./, "");
       var thumb = slide.replace(/\..{1,}/, "");
       return '<a><img src="' + thumb + '-mini.'+ div +'"></a>';
@@ -285,7 +291,7 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
   $(window).scroll(function() {
     var headerHeightD = $("header").height();
     var st = $(this).scrollTop();
-    var offsetT = steps.offset().top;
+    var offsetT = steps.offset().top - 70;
       if (st >= offsetT) {
         topHead.addClass("fixed");
       } else if (st <= offsetT) {
@@ -323,17 +329,17 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
   });
 
 
-  ymaps.ready(init);
-  function init() {
-    var geolocation = ymaps.geolocation;
-    if (geolocation.city) {
-      $("#custom-city").val(geolocation.city);
-      $(".first-step #select-city").prop('disabled', true).niceSelect("update");
-      $(".first-step #radio2").prop("checked", true)
-    } else {
-      console.log('Не удалось установить местоположение');
-    }
-  };
+  // ymaps.ready(init);
+  // function init() {
+  //   var geolocation = ymaps.geolocation;
+  //   if (geolocation.city) {
+  //     $("#custom-city").val(geolocation.city);
+  //     $(".first-step #select-city").prop('disabled', true).niceSelect("update");
+  //     $(".first-step #radio2").prop("checked", true)
+  //   } else {
+  //     console.log('Не удалось установить местоположение');
+  //   }
+  // };
 
   $('.pulse, .btn').each(function() {
     var $this = $(this);

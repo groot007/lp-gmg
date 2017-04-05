@@ -545,23 +545,26 @@ header{
 	    text-align: center;
 	    z-index: -10;
 	    overflow: hidden;
-	    background: url("../img/header-bg.jpg") no-repeat center center;
+	    background: #000 url("../img/header-bg.jpg") no-repeat center center;
 	    background-size: cover;
-	    animation-name: bg-parallax;
-		animation-duration: 20s;
-		-webkit-animation-fill-mode: both;
-		animation-fill-mode: both;
+
 		-webkit-transform:  scale(1.1) ;
 		 -moz-transform:  scale(1.1) ;
 		 -o-transform:  scale(1.1) ;
 		 transform: scale(1.1);
 		 &.shop{
- 			background: url("../img/shop-img/header-bg.jpg") no-repeat center center;
+ 			background: #000  url("../img/shop-img/header-bg.jpg") no-repeat center center;
  			 background-size: cover;
 		 }
 		 &.auto{
- 			background: url("../img/auto-img/header-bg.jpg") no-repeat center center;
+ 			background: #000 url("../img/auto-img/header-bg.jpg") no-repeat center center;
  			 background-size: cover;
+		 }
+		 &.anim-parallax{
+		 	animation-name: bg-parallax;
+			animation-duration: 20s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
 		 }
 	}
 	// .bg-img{
@@ -928,6 +931,8 @@ header{
 .steps{
 	padding: 60px 0;
 	background-color: #ececec;
+	transition: all .2s ease-in;
+
 	@include custom{
 		padding: 50px 0;
 	}
@@ -1351,6 +1356,7 @@ h2{
 .work-part{
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 25px;
 	// height: 500px;
 	&.tram{
 
@@ -2556,6 +2562,7 @@ form{
 .section-img{
 	max-width: 100%;
 }
+
 .subslides.slick-slide{
 	// height: 410px;
 	a:focus{
@@ -3102,7 +3109,7 @@ form{
 	    text-align: center;
 	    z-index: 0;
 	    overflow: hidden;
-	    background: url("../img/header-bg.jpg") no-repeat center center;
+	    background: #000 url("../img/header-bg.jpg") no-repeat center center;
 	    background-size: cover;
 	    animation-name: bg-parallax;
 		animation-duration: 20s;
@@ -3113,7 +3120,7 @@ form{
 		 -o-transform:  scale(1.1) ;
 		 transform: scale(1.1);
 		 &.shop{
- 			background: url("../img/shop-img/header-adv-dark.jpg") no-repeat center center;
+ 			background: #000 url("../img/shop-img/header-adv-dark.jpg") no-repeat center center;
  			 background-size: cover;
  			 background-attachment: fixed;
 		 }
@@ -3566,7 +3573,9 @@ form{
 // ============================
 // -------  AUTO STYLES -------
 .page-auto{
-
+	.work-part{
+		margin-bottom: 40px;
+	}
 	header{
 		.top-head{
 			border-bottom: none;
