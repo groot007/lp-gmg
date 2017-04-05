@@ -8,8 +8,9 @@
 // import("../libs/scrollToId/jquery.malihu.PageScroll2id.js");
 // import("../libs/magnific-popup/js/jquery.magnific-popup.min.js");
 // import("../libs/countdown/jquery.countdown.min.js");
-// import("../libs/ZeroClipboard.js");
-// import("../libs/lazyload.js");
+// notimport("../libs/ZeroClipboard.js");
+// import("../libs/clipboard.min.js");
+// notimport("../libs/lazyload.js");
 
 $(document).on('ready', function () {
   var $preloader = $('#page-preloader'),
@@ -41,6 +42,13 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
   $('#timer-2').countdown(curYear +'/'+ curMonth + '/29 12:56:45')
 });;
 
+  $('input,textarea').focus(function(){
+   $(this).data('placeholder',$(this).attr('placeholder'))
+   $(this).attr('placeholder','');
+ });
+ $('input,textarea').blur(function(){
+   $(this).attr('placeholder',$(this).data('placeholder'));
+ });
 
   $(".phone-num").each(function(){
     if ($(window).width() < 768) {
@@ -52,13 +60,9 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
 
   })
 
-  var client = new ZeroClipboard($(".email"), {
-    moviePath: "../libs/ZeroClipboard.swf"
-  });
+  var clipboard = new Clipboard('.email');
   // После того как происходит загрузка флеш файла
-  client.on("load", function(client) {
-    // и завершено копирование в буфер
-    client.on("complete", function(client, args) {
+    clipboard.on("success", function(client, args) {
       $(".mail .cb-message").animate({
         opacity : 1
       }, 100, function(){
@@ -70,6 +74,8 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
 
       });
     });
+    clipboard.on('error', function(e) {
+      console.error('Не удалось скопировать email');
   });
 
   $(".reviews .gallery").magnificPopup({
@@ -91,7 +97,12 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
            // don't foget to change the duration also in CSS
         }
       });
-  $(".phone").mask("+7(999) 999-99-99");
+  $(".phone").mask("+7(999) 999-99-99",
+    {
+      completed:function(){
+        alert("You typed the following: "+this.val());
+      }
+    });
   $('.subslides').each(function(indx){
     $(this).find(".gallery").magnificPopup({
       type: 'image',

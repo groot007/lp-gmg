@@ -34,7 +34,7 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		online: false,
+		online: true,
 		tunnel: true,
 		tunnel: "gootex", //Demonstration page: http://projectmane.localtunnel.me
 	});
