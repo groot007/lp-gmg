@@ -156,7 +156,7 @@
 						<div class="step arrow"><div class="wrap-img"><img src="img/arrow.png"></div></div>
 						<div class="step">
 							<div class="wrap-img"><img src="img/clients-icon.png"></div>
-							<h4>Клиенты из OFFline</h4>
+							<h4>Клиенты из offline</h4>
 						</div>
 					</div>
 					<div class="row">
@@ -231,7 +231,7 @@
 					<div class="reasons-wrap">
 						<div class="reason-block">
 							<span class="circle-num">01</span>
-							<p>Гарантируем единые стандарты и высокое качество услуг на всей территории страны для проектов любого масштаба.
+							<p>Гарантируем единые стандарты <br>и высокое качество услуг на всей территории страны для проектов любого масштаба.
 							</p>
 						</div>
 						<div class="reason-block">
@@ -272,7 +272,7 @@
 							<input type="text" name="mobile" class="phone" placeholder="Телефон">
 							<button type="submit" class="pulse">Отправить</button>
 							<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером!
-Мы делаем все, что касается оформления рекламно-информационного изображения на любых поверхностях.</p>
+<br><br>Мы делаем все, что касается оформления рекламно-информационного оформления на любых поверхностях.</p>
 							<?php echo $hidden_inpunt; ?>
 						</form>
 						<p>Нам удается угадывать
@@ -323,13 +323,14 @@
 											<span>от 333 руб.</span>
 										</div>
 									</a>
-									<a href="img/portfolio/bus/outer/remond/reamond-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/reamond-1.jpg"></a>
+									<a href="img/portfolio/bus/outer/remond/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/1.jpg"></a>
 								</div>
 								<div class="slide-wrap gallery">
-								<a href="img/portfolio/bus/outer/remond/reamond-2.jpg">
-								<img class="section-img" data-lazy="img/portfolio/bus/outer/remond/reamond-2.jpg"></a>
+								<a href="img/portfolio/bus/outer/remond/2.jpg">
+								<img class="section-img" data-lazy="img/portfolio/bus/outer/remond/2.jpg"></a>
 								</div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/remond/reamond-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/reamond-3.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/remond/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/3.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/remond/4.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/4.jpg"></a></div>
 							</div>
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/gold-standart/gold-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/gold-standart/gold-1.jpg"></a></div>
@@ -337,9 +338,9 @@
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/gold-standart/gold-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/gold-standart/gold-3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/beeline/beeline-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/beeline/beeline-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/beeline/beeline-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/beeline/beeline-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/beeline/beeline-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/beeline/beeline-3.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/electric-planet/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/electric-planet/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/electric-planet/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/3.jpg"></a></div>
 							</div>
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/vacuclub/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/vacuclub/1.jpg"></a></div>
@@ -406,11 +407,11 @@
 							</a>
 							<a href="#" class="partner-inf">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio/bus/outer/beeline-logo.jpg"></div>
+									<div class="picture"><img src="img/portfolio/bus/outer/electic-planet-logo.jpg"></div>
 									<div>
-										<span>Beeline</span>
+										<span>Планета Электрика</span>
 										<div class="other-inf">
-											РК «4G-интернет «Билайн» супербыстрый, как Wi-Fi», 2016
+											РК «Открытие магазина «Планета Электрика» в Новокузнецке», 2016
 										</div>
 									</div>
 								</div>
@@ -739,6 +740,10 @@
 		</section>
 		<section class="reviews">
 			<h2>Отзывы</h2>
+			<div class="video-reviews">
+				<div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5 video-item"><iframe src="https://www.youtube.com/embed/xsuhBkGMo0U" frameborder="0" allowfullscreen></iframe></div>
+				<div class="col-xs-12 col-sm-6 col-md-5  col-lg-5 video-item"><iframe src="https://www.youtube.com/embed/hY0tr4IdB1I" frameborder="0" allowfullscreen></iframe></div>
+			</div>
 			<div class="container gallery">
 				<a href="img/reviews/1.jpg"><img src="img/reviews/1-mini.jpg" alt="Отзыв"></a>
 				<a href="img/reviews/2.jpg"><img src="img/reviews/2-mini.jpg" alt="Отзыв"></a>
@@ -1053,11 +1058,11 @@
 								<h3 class="text-orange">Дополнительная <br>информация <br>
 									(не обязательно)
 								</h3>
-								<textarea name="description">Дополнительна информация о Вашем проекте</textarea>
+								<textarea name="description" placeholder="Дополнительна информация о Вашем проекте"></textarea>
 							</div>
 							<button type="submit" class="pulse">Рассчитать стоимость и сроки</button>
 							<h3>С нами <span class="text-orange">легко и приятно</span> работать</h3>
-							<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером!
+							<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером!<br><br>
 Мы делаем все, что касается оформления рекламно-информационного изображения на любых поверхностях.</p>
 							<?php echo $hidden_inpunt; ?>
 						</form>
@@ -1077,8 +1082,8 @@
 						<p>
 							За это время разработали с нуля тысячи проектов, запустили рекламу на сотни тысяч
 							километров, выдали тысячи рекламных материалов и упаковок.<br>
-							Мы оказываем услуги по созданию и размещению наружной рекламы в Новосибирске,
-							Барнауле, Кемерове, Новокузнецке, Омске, Томске, а также в любом из 90 городов
+							Мы оказываем услуги по созданию и размещению наружной рекламы <br>в Новосибирске,
+							Барнауле, Кемерове, Новокузнецке, Омске, Томске, а также <br>в любом из 90 городов
 							России, входящих в зону покрытия GMG. Нашей визитной карточкой является
 							транзитная реклама.
 						</p>
@@ -1097,7 +1102,7 @@
 							<input type="text" placeholder="Имя" name="firstname">
 							<input type="text" name="mobile" class="phone" placeholder="Телефон">
 							<button type="submit" class="pulse">Отправить</button>
-							<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером!
+							<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером!<br><br>
 Мы делаем все, что касается оформления рекламно-информационного изображения на любых поверхностях.</p>
 							<?php echo $hidden_inpunt; ?>
 						</form>
@@ -1161,7 +1166,7 @@
 					</li>
 				</ol>
 			</fieldset>
-			<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером! <br>
+			<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером! <br><br>
 Еще мы делаем все, что касается оформления рекламно-информационного изображения на любых поверхностях.</p>
 			<?php echo $hidden_inpunt; ?>
 		</form>
