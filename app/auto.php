@@ -118,8 +118,8 @@
 					<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 
 						<p class="descr">
-							Идеально подойдет, если Ваша цель стать <span class="text-orange">«top of the mind» - БЫТЬ ПЕРВЫМ</span>
-							в списке компаний, которых вспомнит ваш клиент перед покупкой или рекомендацией!
+							Идеально подойдет, если Ваша цель стать <span class="text-orange">top of the mind — БЫТЬ ПЕРВЫМ</span>
+							в списке компаний, о которых вспомнит Ваш клиент перед покупкой или рекомендацией!
 						</p>
 						<div class="cols col-xs-12 col-sm-6 col-md-6 col-lg-5">
 							<h2 class="with-bg">Корпоративный транспорт</h2>
@@ -128,12 +128,12 @@
 								<li><a href="#van" class="to-id">Грузовой / Спецтехника</a></li>
 								<li><a href="#bus" class="to-id">Тенты / Автобусы</a></li>
 							</ul>
-							<p class="text-orange"> от 1,2 до 55 м²</p>
+							<p class="text-orange"> от 1,2 до 100 м²</p>
 						</div>
 						<div class="cols col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-2">
 							<h2 class="with-bg">Сервис</h2>
 							<p>Любая сложность проекта <br>
-								Мониторинг качества / Фотоотчеты <br>
+								Мониторинг качества. Фотоотчеты <br>
 								Реальные скидки до 40%. Гарантия<br>
 								<span class="text-orange">Работаем на результат!</span>
 							</p>
@@ -170,7 +170,7 @@
 						</h4>
 						<div class="stats-wrap stats-wrap-1">
 							<div class="stats-block">
-								<p class="number">3500<sup>+</sup><span class="details">Реализованных проектов</span></p>
+								<p class="number">5730<sup>+</sup><span class="details">Реализованных проектов</span></p>
 							</div>
 							<div class="stats-block">
 								<p class="number">30000<sup>+</sup><span class="details">Наружных поверхностей</span></p>
@@ -184,31 +184,31 @@
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="1" data-width="1" data-fontsize="16" data-percent="14" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent">
 									</div>
-										<h5>Согласование маршрутов и количества транспорта;</h5>
+										<h5>Согласование<br>деталей</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="2" data-width="1" data-fontsize="16" data-percent="28" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Заключение договора</h5>
+										<h5>Заключение<br>договора</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="3" data-width="1" data-fontsize="16" data-percent="42" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Предоплата/оплата</h5>
+										<h5>Предоплата<br>оплата</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="4" data-width="1" data-fontsize="16" data-percent="56" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Согласование макета</h5>
+										<h5>Согласование<br>макета</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="5" data-width="1" data-fontsize="16" data-percent="70" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Изготовление;</h5>
+										<h5>Изготовление</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="6" data-width="1" data-fontsize="16" data-percent="84" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
@@ -220,7 +220,7 @@
 									<div class="circlestat" data-dimension="100" data-text="7" data-width="1" data-fontsize="16" data-percent="100" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Запуск готового транспорта/фотоотчет.</h5>
+										<h5>Завершение<BR>проекта<br>фотоотчет</h5>
 								</div>
 							</div>
 						</div>
@@ -279,7 +279,7 @@
 <?php echo $hidden_inpunt; ?>
 						</form>
 						<p>Нам удается угадывать
-							ваши пожелания
+							Ваши пожелания
 						</p>
 					</div>
 				</div>
@@ -288,7 +288,7 @@
 		<section class="join-us" id="join-us">
 			<div class="container">
 				<h2 class="underline"><strong>Присоединяйтесь</strong><br>
-					к хорошей кампании <span class="text-orange">наших клиентов:</span>
+					к хорошей кампании <span class="text-orange">наших клиентов</span>
 				</h2>
 				<div class="row partners">
 					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
@@ -314,12 +314,19 @@
 		</section>
 		<section class="bus work-part">
 			<div class="container">
-				<h2 class="underline"><strong>Примеры и отзывы</strong><br>Нашей работы</h2>
+				<h2 class="underline"><strong>Примеры</strong><br>Нашей работы</h2>
 				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 pdnl-null">
 					<div class="wrap-outer-s">
 						<div class="works-slide">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/denso/denso-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/denso/denso-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
+								<a href="img/portfolio-auto/auto/denso/denso-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/denso/denso-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/denso/denso-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/denso/denso-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/denso/denso-3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/denso/denso-3.jpg"></a></div>
 							</div>
@@ -348,7 +355,14 @@
 					<div class="wrap-inner-s">
 						<div class="works-slide inner">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-auto/van/grifon/1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/van/grifon/1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+									<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
+								<a href="img/portfolio-auto/van/grifon/1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/van/grifon/1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/van/grifon/2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/van/grifon/2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/van/grifon/3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/van/grifon/3.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/van/grifon/4.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/van/grifon/4.jpg"></a></div>
@@ -464,7 +478,14 @@
 					<div class="wrap-outer-s">
 						<div class="works-slide">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-auto/truck/ab/ab-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/truck/ab/ab-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+									<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
+								<a href="img/portfolio-auto/truck/ab/ab-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/truck/ab/ab-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/truck/ab/ab-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/truck/ab/ab-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/truck/ab/ab-3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/truck/ab/ab-3.jpg"></a></div>
 							</div>
@@ -481,7 +502,14 @@
 					<div class="wrap-inner-s">
 						<div class="works-slide inner">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-auto/special/eco-company/ecolog-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/special/eco-company/ecolog-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+									<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
+								<a href="img/portfolio-auto/special/eco-company/ecolog-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/special/eco-company/ecolog-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/special/eco-company/ecolog-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/special/eco-company/ecolog-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/special/eco-company/ecolog-3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/special/eco-company/ecolog-3.jpg"></a></div>
 							</div>
@@ -584,7 +612,14 @@
 					<div class="wrap-outer-s">
 						<div class="works-slide">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-auto/tilt/beloved/beloved-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/tilt/beloved/beloved-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+										<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
+								<a href="img/portfolio-auto/tilt/beloved/beloved-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/tilt/beloved/beloved-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/tilt/beloved/beloved-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/tilt/beloved/beloved-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/tilt/beloved/beloved-3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/tilt/beloved/beloved-3.jpg"></a></div>
 							</div>
@@ -602,7 +637,14 @@
 					<div class="wrap-inner-s">
 						<div class="works-slide inner">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-auto/bus/remond/reamond-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/bus/remond/reamond-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+									<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
+								<a href="img/portfolio-auto/bus/remond/reamond-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/bus/remond/reamond-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/bus/remond/reamond-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/bus/remond/reamond-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/bus/remond/reamond-3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/bus/remond/reamond-3.jpg"></a></div>
 							</div>
@@ -712,140 +754,12 @@
 				<a href="img/reviews/4.jpg"><img src="img/reviews/4-mini.jpg" alt="Отзыв"></a>
 			</div>
 		</section>
-		<section class="adv-format" id="format-ad">
-			<div class="container">
-				<h2 class="underline"><strong>форматы <span class="text-orange">размещения рекламы</span></strong></h2>
-				<div class="tabs">
-					<div class="tabs-nav">
-						<a href="#" data-target="tab-content-1" class="tab active">Наружная</a>
-						<a href="#" data-target="tab-content-2" class="tab">Внутрисалонная</a>
-					</div>
-					<div class="tab-content tab-content-1 active">
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="example-block">
-								<h4>Художественное оформление</h4>
-								<p class="square">Площадь: 45 м<sup>2</sup></p>
-								<div class="img-wrap"><img src="img/icon-bus.jpg"></div>
-								<p class="adv-details">Полностью брендированный автобус — это
-									крупномасштабная реклама вашего бренда,
-									которая позволит ярко выделиться в
-									конкурентной среде. Дизайн, обыгрывающий
-									элементы конструкции автобуса (двери, окна,
-									колеса, борта), способен усилить
-									эффективность Вашей рекламы в несколько
-									раз.
-								</p>
-							</div>
-						</div>
-						<div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="example-block">
-								<h4>Задний борт</h4>
-								<p class="square">Площадь: от 1,6 до 6 м<sup>2</sup></p>
-								<div class="img-wrap"><img src="img/icon-bus-side.jpg"></div>
-								<p class="adv-details">Самый узнаваемый формат! Множество
-									клиентов вывели свои бренды на рынок,
-									используя формат ADback.
-									ADback — это прямое воздействие на
-									аудиторию автомобилистов, а также
-									пешеходов. Для малого и среднего бюджетов
-									Полное брендирование заднего борта
-									подходит для креативных и имиджевых
-									рекламных кампаний.
-								</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sm-full">
-							<div class="example-block">
-								<h4>Сменный блок</h4>
-								<p class="square">Площадь: от 0,5 до 10 м<sup>2</sup></p>
-								<div class="img-wrap"><img src="img/icon-bus-2.jpg"></div>
-								<p class="adv-details">Сменные модули — оптимальный формат
-									для рекламы ретейла. Брендированный
-									автобус несет имидж Вашей торговой марки
-									на улицы города, в то время как каждую
-									неделю вы можете размещать информацию
-									об акциях, распродажах, новинках, используя
-									сменные модули.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="tab-content tab-content-2">
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="example-block">
-								<h4>Стикер А3, А4</h4>
-								<p class="square">Горизонтальный, вертикальный</p>
-								<div class="img-wrap"><img src="img/stickers-icon.jpg"></div>
-								<p class="adv-details">Современная внутрисалонная реклама — прекрасный
-бюджетный вид продвижения с высокими OTS (Opportunity to see)
-и длительностью контакта с рекламным сообщением:
-средняя продолжительность поездки пассажира в автобусе
-составляет 25 минут.
-								</p>
-							</div>
-						</div>
-						<div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="example-block">
-								<h4>Художественный стикер </h4>
-								<p class="square">VIP-стикер (1,2 × 0,3 м)</p>
-								<div class="img-wrap"><img src="img/art-sticker-icon.jpg"></div>
-								<p class="adv-details">Использование визуальных эффектов в indoor-рекламе может быть чрезвычайно креативным, при этом такое размещение
-не обязательно занимает большую площадь. Мы предлагаем прозрачные пленки, фигурную обрезку, эффект объема.
-								</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="example-block">
-								<h4>Брендирование салона </h4>
-								<p class="square">Площадь: от 10 до 50 м<sup>2</sup></p>
-								<div class="img-wrap"><img src="img/brand-icon.jpg"></div>
-								<p class="adv-details">Салон автобуса может быть не менее привлекательной площадкой для реализации креативных идей, чем борт.
-Уникальное использование общего внутрисалонного пространства для общения с потребителями включает целый комплекс indoor-форматов: потолок, поручни, сиденья, окна. Общественный транспорт фактически превращается в «корпоративный», поскольку полностью брендирован Вашей символикой изнутри.
-								</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="example-block">
-								<h4>Панорамное окно </h4>
-								<p class="square">Площадь: 2 м<sup>2</sup></p>
-								<div class="img-wrap"><img src="img/panoramic-icon.jpg"></div>
-								<p class="adv-details">Самый крупный формат, размещаемый на окнах салона,
-моментально привлекает внимание всех пассажиров.
-								</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="example-block">
-								<h4>Изготовление рекламы </h4>
-								<p class="square">Широкоформатная печать (от 360 до 1 440 dpi)</p>
-								<div class="img-wrap"><img src="img/make-adv-icon.jpg"></div>
-								<p class="adv-details">Современное оборудование обеспечивает европейский уровень печати и позволяет исключить потенциальные проблемы транзитной рекламы — стирание изображения и деформирование рекламных материалов на поверхности транспорта в процессе перепада температур, ежедневной эксплуатации и мойки.
-Мы гарантируем четкие сроки производства и отличное качество рекламных материалов для всех видов наружной
-и внутрисалонной рекламы.
-								</p>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-							<div class="example-block">
-								<h4>Сервисное обслуживание </h4>
-								<p class="square">Монтаж и мониторинг</p>
-								<div class="img-wrap"><img src="img/service-icon.jpg"></div>
-								<p class="adv-details">Опытные мотажные бригады работают круглосуточно,
-чтобы Ваша реклама была смонтирована и демонтирована
-четко в срок. Мы предоставляем лучшее качество
-поклейки наиболее сложных макетов.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="tab-content tab-content-2">
-					</div>
-				</div>
-			</div>
-		</section>
+
+
+
 		<section class="calculation" id="calculator">
 			<div class="container">
-				<h2 class="underline"><strong>А как именно вы хотите,</strong><br>чтобы ваши <span class="text-orange"> клиенты узнали о вас?</span></h2>
+				<h2 class="underline"><strong>А как именно Вы хотите,</strong><br>чтобы Ваши <span class="text-orange"> клиенты узнали о Вас?</span></h2>
 				<p class="deskr">Чтобы рассчитать стоимость размещения рекламы <br>
 					заполните форму и мы подберем лучшую цену для Вас!
 				</p>
@@ -1002,7 +916,7 @@
 								<h3 class="text-orange">Дополнительная информация <br>
 									(не обязательно)
 								</h3>
-								<textarea name="description" placeholder="Дополнительна информация о Вашем проекте"></textarea>
+								<textarea name="description" placeholder="Дополнительная информация о Вашем проекте"></textarea>
 							</div>
 							<button type="submit" class="pulse">Рассчитать стоимость и сроки</button>
 							<h3>С нами <span class="text-orange">легко и приятно</span> работать</h3>
@@ -1052,7 +966,7 @@
 <?php echo $hidden_inpunt; ?>
 						</form>
 						<p>Нам удается угадывать
-							ваши пожелания
+							Ваши пожелания
 						</p>
 					</div>
 				</div>
@@ -1105,7 +1019,7 @@
 					<li>
 						<p>
 							Мы гарантируем конфиденциальность
-ваших данных
+Ваших данных
 						</p>
 					</li>
 				</ol>

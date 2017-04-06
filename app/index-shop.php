@@ -119,7 +119,7 @@
 				<div class="row description">
 					<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 						<h1>Эффективное Оформление Помещений</h1>
-						<h2>может <span class="text-orange">увеличить прибыль в 2-3 раза!</span>
+						<h2>может <span class="text-orange">увеличить прибыль в 2 — 3 раза!</span>
 						</h2>
 						<p class="descr">
 							Добавьте Вашему Бренду Реальности
@@ -138,7 +138,7 @@
 
 							<p>
 								Реальные скидки до 40% <br>
-"Дорабатываем" за другими агентствами <br>
+«Дорабатываем» за другими агентствами <br>
 Гарантия по договору на качество услуг <br>
 							</p>
 						</div>
@@ -172,7 +172,7 @@
 						</h4>
 						<div class="stats-wrap stats-wrap-1">
 							<div class="stats-block">
-								<p class="number">3500<sup>+</sup><span class="details">Реализованных проектов</span></p>
+								<p class="number">5730<sup>+</sup><span class="details">Реализованных проектов</span></p>
 							</div>
 							<div class="stats-block">
 								<p class="number">30000<sup>+</sup><span class="details">Наружных поверхностей</span></p>
@@ -186,31 +186,31 @@
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="1" data-width="1" data-fontsize="16" data-percent="14" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent">
 									</div>
-										<h5>Согласование маршрутов и количества транспорта;</h5>
+										<h5>Замеры<BR>и фотографирование<BR> объекта</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="2" data-width="1" data-fontsize="16" data-percent="28" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Заключение договора</h5>
+										<h5>Заключение<BR>договора</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="3" data-width="1" data-fontsize="16" data-percent="42" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Предоплата/оплата</h5>
+										<h5>Предоплата<BR>оплата</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="4" data-width="1" data-fontsize="16" data-percent="56" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Согласование макета</h5>
+										<h5>Согласование<BR>макета</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="5" data-width="1" data-fontsize="16" data-percent="70" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Изготовление;</h5>
+										<h5>Изготовление</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="6" data-width="1" data-fontsize="16" data-percent="84" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
@@ -222,7 +222,7 @@
 									<div class="circlestat" data-dimension="100" data-text="7" data-width="1" data-fontsize="16" data-percent="100" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Запуск готового транспорта/фотоотчет.</h5>
+										<h5>Запуск проекта<br>фотоотчет</h5>
 								</div>
 							</div>
 						</div>
@@ -281,7 +281,7 @@
 	<?php echo $hidden_inpunt; ?>
 						</form>
 						<p>Нам удается угадывать
-							ваши пожелания
+							Ваши пожелания
 						</p>
 					</div>
 				</div>
@@ -290,7 +290,7 @@
 		<section class="join-us" id="join-us">
 			<div class="container">
 				<h2 class="underline"><strong>Присоединяйтесь</strong><br>
-					к хорошей кампании <span class="text-orange">наших клиентов:</span>
+					к хорошей кампании <span class="text-orange">наших клиентов</span>
 				</h2>
 				<div class="row partners">
 					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
@@ -316,12 +316,19 @@
 		</section>
 		<section class="bus work-part" id="bus">
 			<div class="container">
-				<h2 class="underline"><strong>Примеры и отзывы</strong><br>Нашей работы</h2>
+				<h2 class="underline"><strong>Примеры</strong><br>Нашей работы</h2>
 				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 pdnl-null">
 					<div class="wrap-outer-s">
 						<div class="works-slide">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/LED/beerman/beerman-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/beerman/beerman-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+									<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
+								<a href="img/portfolio-shop/LED/beerman/beerman-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/beerman/beerman-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/LED/beerman/beerman-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/beerman/beerman-2.jpg"></a></div>
 							</div>
 							<div class="subslides">
@@ -397,7 +404,14 @@
 					<div class="wrap-outer-s">
 						<div class="works-slide">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/novomar/novomar-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/novomar/novomar-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+									<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
+								<a href="img/portfolio-shop/complex-design/novomar/novomar-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/novomar/novomar-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/novomar/novomar-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/novomar/novomar-2.jpg"></a></div>
 							</div>
 							<div class="subslides">
@@ -477,7 +491,14 @@
 					<div class="wrap-outer-s">
 						<div class="works-slide">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+									<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
+								<a href="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-2.jpg"></a></div>
 							</div>
 							<div class="subslides">
@@ -602,7 +623,7 @@
 						</div>
 						<div class="deskr-col deskr cols">
 							<div class="tab-cont visible" id="text-1">
-								<p>Процедура печати будет происходить на широкоформатных плоттерах, в результате чего вы получите наилучшее качество. </p><p>
+								<p>Процедура печати будет происходить на широкоформатных плоттерах, в результате чего Вы получите наилучшее качество. </p><p>
 Также широкоформатная печать позволяет реализовать самые масштабные рекламные проекты.
 </p><p>Наилучшее решение для крупного бизнеса.</p>
 							</div>
@@ -633,7 +654,7 @@
 		</section>
 		<section class="calculation shop" id="calculator">
 			<div class="container">
-				<h2 class="underline"><strong>Покажите Вашим клиентам <span class="text-orange">что вы реальны</span></strong></h2>
+				<h2 class="underline"><strong>Покажите Вашим клиентам <span class="text-orange">что Вы реальны</span></strong></h2>
 				<p class="deskr">Чтобы рассчитать стоимость  заполните форму  <br>
 и <span class="text-orange">мы подберем лучшую цену для Вас!</span>
 				</p>
@@ -692,7 +713,7 @@
 	<?php echo $hidden_inpunt; ?>
 						</form>
 						<p>Нам удается угадывать
-							ваши пожелания
+							Ваши пожелания
 						</p>
 					</div>
 				</div>
@@ -746,7 +767,7 @@
 					<li>
 						<p>
 							Мы гарантируем конфиденциальность
-ваших данных
+Ваших данных
 						</p>
 					</li>
 				</ol>
