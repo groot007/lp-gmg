@@ -59,7 +59,7 @@
 								<div class="mail">
 									<img src="img/mail-icon.png" class="hidden-sm">
 									<div class="wrap">
-										<a class="email underline" href="#">sales@cmg-nsk.ru</a><br>
+										<a class="email underline" href="#" data-clipboard-text="sales@cmg-nsk.ru">sales@cmg-nsk.ru</a><br>
 										<p>Напишите нам в любое время!</p>
 										<div class="cb-message">e-mail скопирован</div>
 									</div>
@@ -77,7 +77,7 @@
 											<div id="timer-1" class="timer">
 												<div class="hour"></div>
 											</div>
-											<p class="message-text">При размещении рекламы<br> на транспорте на 3 месяца, <br>четвертый — бесплатно!</p>
+											<p class="message-text">При размещении рекламы<br> на транспорте на три месяца, <br>четвертый — бесплатно!</p>
 											</link>
 										<li class="message-item">
 											<img src="img/clients-icon.png">
@@ -115,7 +115,7 @@
 						</h2>
 						<p class="descr">
 							Идеально подойдет, если Ваша цель стать <span class="text-orange">top of the mind — БЫТЬ ПЕРВЫМ</span>
-							в списке компаний о которых вспомнит Ваш клиент перед покупкой или рекомендацией!
+							в списке компаний, о которых вспомнит Ваш клиент перед покупкой или рекомендацией!
 						</p>
 						<div class="cols col-xs-12 col-sm-6 col-md-6 col-lg-5">
 							<h2 class="with-bg">Общественный транспорт</h2>
@@ -166,7 +166,7 @@
 						</h4>
 						<div class="stats-wrap stats-wrap-1">
 							<div class="stats-block">
-								<p class="number">3500<sup>+</sup><span class="details">Реализованных проектов</span></p>
+								<p class="number">5730<sup>+</sup><span class="details">Реализованных проектов</span></p>
 							</div>
 							<div class="stats-block">
 								<p class="number">30000<sup>+</sup><span class="details">Наружных поверхностей</span></p>
@@ -180,25 +180,25 @@
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="1" data-width="1" data-fontsize="16" data-percent="14" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent">
 									</div>
-										<h5>Согласование маршрутов<br> и количества транспорта</h5>
+										<h5>Согласование маршрутов<br>и количества транспорта</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="2" data-width="1" data-fontsize="16" data-percent="28" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Заключение<br> договора</h5>
+										<h5>Заключение<br>договора</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="3" data-width="1" data-fontsize="16" data-percent="42" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Предоплата <br>оплата</h5>
+										<h5>Предоплата<br>оплата</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="4" data-width="1" data-fontsize="16" data-percent="56" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Согласование<br> макета</h5>
+										<h5>Согласование<br>макета</h5>
 								</div>
 								<div class="circle-container">
 									<div class="circlestat" data-dimension="100" data-text="5" data-width="1" data-fontsize="16" data-percent="70" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
@@ -216,7 +216,7 @@
 									<div class="circlestat" data-dimension="100" data-text="7" data-width="1" data-fontsize="16" data-percent="100" data-fgcolor="#ff9700" data-bgcolor="#dadada" data-fill="transparent"
 										>
 									</div>
-										<h5>Запуск проекта<br>фотоотчет.</h5>
+										<h5>Запуск проекта<br>фотоотчет</h5>
 								</div>
 							</div>
 						</div>
@@ -231,10 +231,7 @@
 					<div class="reasons-wrap">
 						<div class="reason-block">
 							<span class="circle-num">01</span>
-							<p>Опытные монтажные бригады
-								работают круглосуточно, чтобы
-								Ваша реклама была смонтирована
-								и демонтирована четко в срок.
+							<p>Гарантируем единые стандарты и высокое качество услуг на всей территории страны для проектов любого масштаба.
 							</p>
 						</div>
 						<div class="reason-block">
@@ -249,12 +246,16 @@
 					<div class="reasons-wrap">
 						<div class="reason-block">
 							<span class="circle-num">03</span>
-							<p>Гарантируем единые стандарты и высокое качество услуг на всей территории страны для проектов любого масштаба.
+							<p>
+							Опытные монтажные бригады
+								работают круглосуточно, чтобы
+								Ваша реклама была смонтирована
+								и демонтирована четко в срок.
 							</p>
 						</div>
 						<div class="reason-block">
 							<span class="circle-num">04</span>
-							<p>Геотаргетирование по округам, районам, улицам. Запуск рекламы уже через 7 календарных дней после Вашего «ДА!».
+							<p>Геотаргетирование по округам, районам, улицам. Запуск рекламы уже через 5 календарных дней после Вашего «ДА!».
 							</p>
 						</div>
 					</div>
@@ -284,7 +285,7 @@
 		<section class="join-us" id="join-us">
 			<div class="container">
 				<h2 class="underline"><strong>Присоединяйтесь</strong><br>
-					к хорошей компании <span class="text-orange">наших клиентов:</span>
+					к хорошей компании <span class="text-orange">наших клиентов</span>
 				</h2>
 				<div class="row partners">
 					<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
@@ -316,15 +317,18 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-<!-- 									<a class="video-pop" href="https://www.youtube.com/watch?v=L3V7LKYPIUQ">
-									<div class="video-btn">
-										<span class="play"><i class="fa fa-play" aria-hidden="true"></i></span>
-										<span>смотреть видеоотзыв</span>
-									</div>
-									<img class="section-img" data-lazy="img/example-work-1.jpg"></a> -->
+									<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 333 руб.</span>
+										</div>
+									</a>
 									<a href="img/portfolio/bus/outer/remond/reamond-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/reamond-1.jpg"></a>
 								</div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/remond/reamond-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/reamond-2.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<a href="img/portfolio/bus/outer/remond/reamond-2.jpg">
+								<img class="section-img" data-lazy="img/portfolio/bus/outer/remond/reamond-2.jpg"></a>
+								</div>
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/remond/reamond-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/reamond-3.jpg"></a></div>
 							</div>
 							<div class="subslides">
@@ -333,9 +337,9 @@
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/gold-standart/gold-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/gold-standart/gold-3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/electric-planet/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/electric-planet/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/electric-planet/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/3.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/beeline/beeline-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/beeline/beeline-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/beeline/beeline-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/beeline/beeline-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/beeline/beeline-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/beeline/beeline-3.jpg"></a></div>
 							</div>
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/vacuclub/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/vacuclub/1.jpg"></a></div>
@@ -352,7 +356,14 @@
 					<div class="wrap-inner-s">
 						<div class="works-slide inner">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/inner/be-women/be-women-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/be-women/be-women-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="">
+										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+										<span>от 333 руб.</span>
+									</div>
+								</a>
+								<a href="img/portfolio/bus/inner/be-women/be-women-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/be-women/be-women-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus/inner/be-women/be-women-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/be-women/be-women-2.jpg"></a></div>							</div>
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus/inner/continent/continent-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/continent/continent-1.jpg"></a></div>
@@ -395,11 +406,11 @@
 							</a>
 							<a href="#" class="partner-inf">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio/bus/outer/electic-planet-logo.jpg"></div>
+									<div class="picture"><img src="img/portfolio/bus/outer/beeline-logo.jpg"></div>
 									<div>
-										<span>Планета Электрика</span>
+										<span>Beeline</span>
 										<div class="other-inf">
-											РК «Открытие магазина «Планета Электрика» в Новокузнецке», 2016
+											РК «4G-интернет «Билайн» супербыстрый, как Wi-Fi», 2016
 										</div>
 									</div>
 								</div>
@@ -472,7 +483,14 @@
 					<div class="wrap-outer-s">
 						<div class="works-slide">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/outer/bellona/bellona-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bellona/bellona-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="">
+										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+										<span>от 333 руб.</span>
+									</div>
+								</a>
+								<a href="img/portfolio/bus-taxi/outer/bellona/bellona-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bellona/bellona-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/outer/bellona/bellona-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bellona/bellona-2.jpg"></a></div>
 							</div>
 							<div class="subslides">
@@ -490,7 +508,14 @@
 					<div class="wrap-inner-s">
 						<div class="works-slide inner">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/inner/five-lake/five-lake-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/five-lake/five-lake-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="">
+										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+										<span>от 333 руб.</span>
+									</div>
+								</a>
+								<a href="img/portfolio/bus-taxi/inner/five-lake/five-lake-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/five-lake/five-lake-1.jpg"></a></div>
 							</div>
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/inner/protection-center/protection-center-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/protection-center/protection-center-1.jpg"></a></div>
@@ -589,7 +614,14 @@
 					<div class="wrap-outer-s">
 						<div class="works-slide">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/outer/shreya/shreya-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="">
+										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+										<span>от 333 руб.</span>
+									</div>
+								</a>
+								<a href="img/portfolio/tram/outer/shreya/shreya-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio/tram/outer/shreya/shreya-2.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio/tram/outer/shreya/shreya-3.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-3.jpg"></a></div>
 							</div>
@@ -604,7 +636,14 @@
 					<div class="wrap-inner-s">
 						<div class="works-slide inner">
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/inner/alpha/alfa-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/alpha/alfa-1.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="">
+										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+										<span>от 333 руб.</span>
+									</div>
+								</a>
+								<a href="img/portfolio/tram/inner/alpha/alfa-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/alpha/alfa-1.jpg"></a></div>
 							</div>
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio/tram/inner/hot-thing/hot-thing-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/hot-thing/hot-thing-1.jpg"></a></div>
@@ -700,10 +739,6 @@
 		</section>
 		<section class="reviews">
 			<h2>Отзывы</h2>
-			<div class="video-reviews">
-				<div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5 video-item"><iframe src="https://www.youtube.com/embed/xsuhBkGMo0U" frameborder="0" allowfullscreen></iframe></div>
-				<div class="col-xs-12 col-sm-6 col-md-5  col-lg-5 video-item"><iframe src="https://www.youtube.com/embed/hY0tr4IdB1I" frameborder="0" allowfullscreen></iframe></div>
-			</div>
 			<div class="container gallery">
 				<a href="img/reviews/1.jpg"><img src="img/reviews/1-mini.jpg" alt="Отзыв"></a>
 				<a href="img/reviews/2.jpg"><img src="img/reviews/2-mini.jpg" alt="Отзыв"></a>
@@ -845,7 +880,7 @@
 		<section class="calculation" id="calculator">
 			<div class="container">
 				<h2 class="underline"><strong>А как именно Вы хотите,</strong><br>чтобы Ваши <span class="text-orange"> клиенты узнали о Вас?</span></h2>
-				<p class="deskr">Чтобы рассчитать стоимость размещения рекламы <br>
+				<p class="deskr">Чтобы рассчитать стоимость размещения рекламы,<br>
 					заполните форму, и мы подберем лучшую цену для Вас!
 				</p>
 				<div class="row">
@@ -953,7 +988,7 @@
 								<div class="step second-step">
 									<span class="circle-num">02</span>
 									<div class="group-input">
-										<input type="checkbox" class="checkbox" id="check1" name="transport" value="Автобус">
+										<input type="checkbox" class="checkbox" id="check1" name="transport">
 										<label for="check1" class="icon-bus">
 											<!-- <div class="wrap-img">
 												<img src="img/icon-bus-mini.png">
@@ -961,7 +996,7 @@
 										</label>
 									</div>
 									<div class="group-input">
-										<input type="checkbox" class="checkbox" id="check2" name="transport" value="Маршрутка">
+										<input type="checkbox" class="checkbox" id="check2" name="transport">
 										<label for="check2" class="icon-bus-taxi">
 											<!-- <div class="wrap-img">
 												<img src="img/icon-bus-taxi.png">
@@ -969,7 +1004,7 @@
 										</label>
 									</div>
 									<div class="group-input">
-										<input type="checkbox" class="checkbox" id="check3" name="transport" value="Троллейбус">
+										<input type="checkbox" class="checkbox" id="check3" name="transport">
 										<label for="check3" class="icon-trolleybus">
 											<!-- <div class="wrap-img">
 												<img src="img/icon-trolleybus.png">
@@ -977,7 +1012,7 @@
 										</label>
 									</div>
 									<div class="group-input">
-										<input type="checkbox" class="checkbox" id="check4" name="transport" value="Трамвай">
+										<input type="checkbox" class="checkbox" id="check4" name="transport">
 										<label for="check4" class="icon-tram">
 											<!-- <div class="wrap-img">
 												<img src="img/icon-tram.png">
@@ -1018,7 +1053,7 @@
 								<h3 class="text-orange">Дополнительная <br>информация <br>
 									(не обязательно)
 								</h3>
-								<textarea name="description" placeholder="Дополнительна информация о Вашем проекте"></textarea>
+								<textarea name="description">Дополнительна информация о Вашем проекте</textarea>
 							</div>
 							<button type="submit" class="pulse">Рассчитать стоимость и сроки</button>
 							<h3>С нами <span class="text-orange">легко и приятно</span> работать</h3>
@@ -1074,9 +1109,10 @@
 			</div>
 		</section>
 		<section class="contacts" id="contacts">
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3ADCWYTzg5gdfe5GmC1KDveW5-AOTlBqCH&amp;width=48%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>			<div class="container">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=DCWYTzg5gdfe5GmC1KDveW5-AOTlBqCH&amp;width=48%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+			<div class="container">
 				<div class="col-xs-12 col-sm-6 col-sm-offset-6">
-				<h2 class="underline">Наши<br> <strong>Контакты</strong></h2>
+					<h2 class="underline">Наши<br> <strong>Контакты</strong></h2>
 					<ul>
 						<li>
 							<i class="fa fa-map-marker" aria-hidden="true"></i>

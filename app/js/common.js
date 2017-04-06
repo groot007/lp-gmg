@@ -97,12 +97,7 @@ $('#timer-2').countdown(secondDate).on('update.countdown', function(event) {
            // don't foget to change the duration also in CSS
         }
       });
-  $(".phone").mask("+7(999) 999-99-99",
-    {
-      completed:function(){
-        alert("You typed the following: "+this.val());
-      }
-    });
+  $(".phone").mask("+7(999) 999-99-99");
   $('.subslides').each(function(indx){
     $(this).find(".gallery").magnificPopup({
       type: 'image',

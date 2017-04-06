@@ -1002,7 +1002,7 @@
 								<h3 class="text-orange">Дополнительная информация <br>
 									(не обязательно)
 								</h3>
-								<textarea>Дополнительна информация о Вашем проекте</textarea>
+								<textarea name="description" placeholder="Дополнительна информация о Вашем проекте"></textarea>
 							</div>
 							<button type="submit" class="pulse">Рассчитать стоимость и сроки</button>
 							<h3>С нами <span class="text-orange">легко и приятно</span> работать</h3>

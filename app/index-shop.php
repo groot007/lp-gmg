@@ -647,7 +647,7 @@
 						<input type="text" name="email" placeholder="E-mail">
 					</div>
 					<div class="group-input">
-					<textarea name="add-inf" placeholder="Дополнительная информация о Вашем проекте" ></textarea>
+					<textarea name="add-inf" placeholder="Дополнительна информация о Вашем проекте"></textarea>
 					</div>
 					<button class="pulse">Рассчитать стоимость и сроки</button>
 					<h3>С нами <span class="text-orange">легко и приятно работать</span></h3>

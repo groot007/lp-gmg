@@ -1132,6 +1132,13 @@
 			evt.preventDefault();
 			var action = $(this).attr("action");
 			var $this = $(this);
+			// var phone = $this.find(".phone");
+			// console.log(phone.val().length)
+			// if (phone.val().length > 7){
+			// 	console.log("ok")
+			// }else{
+			// 	phone.css("border-color", "red");
+			// }
 			$.ajax({
 				url: action,
 				type: "POST",
