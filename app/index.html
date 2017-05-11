@@ -255,8 +255,9 @@
 							предложение для Вас!
 						</p>
 						<form class="two-fields">
-							<input type="text" placeholder="Имя">
-							<input type="text" class="phone" placeholder="Телефон">
+
+							<input type="text" name="name" placeholder="Имя">
+							<input type="tel" pattern="" name="phone" class="phone" placeholder="Телефон" title="+7(999) 999-99-99">
 							<button type="submit" class="pulse">Отправить</button>
 							<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером!
 Мы делаем все, что касается оформления рекламно-информационного изображения на любых поверхностях.</p>
@@ -1127,7 +1128,7 @@
 		<script defer src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 		<script  defer src="js/geolocation.js"></script>
 		<script  src="js/scripts.min.js"></script>
-		<script>
+<!-- 		<script>
 		$("form").on("submit", function(evt) {
 			evt.preventDefault();
 			var action = $(this).attr("action");
@@ -1139,6 +1140,24 @@
 			// }else{
 			// 	phone.css("border-color", "red");
 			// }
+			$(this).validate({
+			  rules: {
+			    name: {
+			      required: true,
+			      minlength: 2
+			    }
+			  },
+			  messages: {
+			    name: {
+			      required: "Поле 'Имя' обязательно к заполнению",
+			      minlength: "Введите не менее 2-х символов в поле "
+			    },
+			    email: {
+			      required: "Поле 'Email' обязательно к заполнению",
+			      email: "Необходим формат адреса email"
+			    }
+			  }
+			});
 			$.ajax({
 				url: action,
 				type: "POST",
@@ -1164,6 +1183,6 @@
 				},
 			})
 		});
-		</script>
+		</script> -->
 	</body>
 </html>

@@ -1,7 +1,8 @@
 <?php
 	require_once('integration_vtiger/ModelIntegration.php');
-
-	$module_integration = new ModelIntegration();
+	$leadsource 				= 'Landing-авто';
+	$calltracking 			= TRUE;
+	$module_integration = new ModelIntegration($leadsource, $calltracking);
 	$hidden_inpunt 			= $module_integration->generate_hidden_inputs();
 ?>
 
@@ -89,13 +90,13 @@
 											</div>
 											<p class="message-text">Внутрисалонная реклама — 20%<br> при заказе рекламы <br>на транспорте на любую сумму!</p>
 										</li>
-										<a class="button to-id popup-with-form" href="#test-form">Заказать звонок</a>
+										<a class="button to-id popup-with-form " href="#test-form">Заказать звонок</a>
 							</ul>
 								</div>
 								<div class="phone">
 									<img src="img/phone-icon.png" class="hidden-sm">
 									<div class="wrap">
-										<a class="phone-num underline popup-with-form" href="#test-form">8 (800) 123-80-80</a><br>
+										<a class="phone-num underline popup-with-form include-phone" href="#test-form">8 (800) 123-80-80</a><br>
 										<p>Мы всегда рады Вашему звонку!</p>
 									</div>
 								</div>
@@ -126,7 +127,7 @@
 							<ul>
 								<li><a href="#auto" class="to-id">Легковой / Фургоны</a></li>
 								<li><a href="#van" class="to-id">Грузовой / Спецтехника</a></li>
-								<li><a href="#bus" class="to-id">Тенты / Автобусы</a></li>
+								<li><a href="#bus" class="to-id">Тенты / Фуры</a></li>
 							</ul>
 							<p class="text-orange"> от 1,2 до 100 м²</p>
 						</div>
@@ -321,12 +322,12 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-								<a class="video-btn phone-num popup-with-form" href="#test-form">
+								<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 6 500 руб.</span>
 										</div>
-									</a>
+									</div>
 								<a href="img/portfolio-auto/auto/denso/denso-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/denso/denso-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/denso/denso-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/denso/denso-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/denso/denso-3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/denso/denso-3.jpg"></a></div>
@@ -334,11 +335,6 @@
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/nsk/nsk-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/nsk/nsk-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/nsk/nsk-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/nsk/nsk-2.jpg"></a></div>
-							</div>
-							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/my-town/my-town-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/my-town/my-town-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/my-town/my-town-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/my-town/my-town-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/my-town/my-town-3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/my-town/my-town-3.jpg"></a></div>
 							</div>
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/auto/my-town/my-town-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/auto/my-town/my-town-1.jpg"></a></div>
@@ -357,12 +353,12 @@
 						<div class="works-slide inner">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-									<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 14 500 руб.</span>
 										</div>
-									</a>
+									</div>
 								<a href="img/portfolio-auto/van/grifon/1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/van/grifon/1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/van/grifon/2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/van/grifon/2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/van/grifon/3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/van/grifon/3.jpg"></a></div>
@@ -480,12 +476,12 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-									<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 14 500 руб.</span>
 										</div>
-									</a>
+									</div>
 								<a href="img/portfolio-auto/truck/ab/ab-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/truck/ab/ab-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/truck/ab/ab-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/truck/ab/ab-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/truck/ab/ab-3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/truck/ab/ab-3.jpg"></a></div>
@@ -505,12 +501,12 @@
 						<div class="works-slide inner">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-									<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 2 000 руб.</span>
 										</div>
-									</a>
+									</div>
 								<a href="img/portfolio-auto/special/bank-open/1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/special/bank-open/1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/special/bank-open/2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/special/bank-open/2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/special/bank-open/3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/special/bank-open/3.jpg"></a></div>
@@ -615,12 +611,12 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-										<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 15 000 руб.</span>
 										</div>
-									</a>
+									</div>
 								<a href="img/portfolio-auto/tilt/fresh/1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/tilt/fresh/1.jpg"></a>
 								</div>
 							</div>
@@ -640,12 +636,12 @@
 						<div class="works-slide inner">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-										<a class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 25 000 руб.</span>
 										</div>
-									</a>
+									</div>
 								<a href="img/portfolio-auto/fyru/beloved/beloved-1.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/fyru/beloved/beloved-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/fyru/beloved/beloved-2.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/fyru/beloved/beloved-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-auto/fyru/beloved/beloved-3.jpg"><img class="section-img slick-slide" src="img/portfolio-auto/fyru/beloved/beloved-3.jpg"></a></div>
@@ -869,34 +865,34 @@
 									<span class="circle-num">02</span>
 									<div class="group-input">
 										<input type="checkbox" class="checkbox" id="check1" name="transport" value="Автобус">
-										<label for="check1" class="icon-bus">
+										<label for="check1" class="icon-auto">
 											<!-- <div class="wrap-img">
 												<img src="img/icon-bus-mini.png">
-												</div> -->Автобус
+												</div> -->Легковой
 										</label>
 									</div>
 									<div class="group-input">
 										<input type="checkbox" class="checkbox" id="check2" name="transport" value="Маршрутка">
-										<label for="check2" class="icon-bus-taxi">
+										<label for="check2" class="icon-van">
 											<!-- <div class="wrap-img">
 												<img src="img/icon-bus-taxi.png">
-												</div> -->Маршрутка
+												</div> -->Фургон
 										</label>
 									</div>
 									<div class="group-input">
 										<input type="checkbox" class="checkbox" id="check3" name="transport" value="Троллейбус">
-										<label for="check3" class="icon-trolleybus">
+										<label for="check3" class="icon-waggon">
 											<!-- <div class="wrap-img">
 												<img src="img/icon-trolleybus.png">
-												</div> -->Троллейбус
+												</div> -->Фура
 										</label>
 									</div>
 									<div class="group-input">
 										<input type="checkbox" class="checkbox" id="check4" name="transport" value="Трамвай">
-										<label for="check4" class="icon-tram">
+										<label for="check4" class="icon-plane">
 											<!-- <div class="wrap-img">
 												<img src="img/icon-tram.png">
-												</div> -->Трамвай
+												</div> -->Другое
 										</label>
 									</div>
 								</div>
@@ -907,8 +903,8 @@
 										<input type="text" class="phone" name="mobile" placeholder="Телефон">
 									</div>
 									<div class="right-group">
-										<input type="text" name="" placeholder="Компания / Сайт">
-										<input type="text" name="" placeholder="E-mail">
+										<input type="text" name="company" placeholder="Компания / Сайт">
+										<input type="text" name="email" placeholder="E-mail">
 									</div>
 								</div>
 							</div>
@@ -936,7 +932,7 @@
 					<h2 class="underline light"><strong>Нашему агентству <span class="text-orange">8 лет</span></strong></h2>
 					<div class="inf-about">
 						<p>Честно. С любовью. Как для себя.
-							Наша основная специализация - делать рекламу, которая работает!
+							Наша основная специализация — делать рекламу, которая работает!
 						</p>
 						<p>
 							За это время разработали с нуля тысячи проектов, запустили рекламу на сотни тысяч
@@ -985,8 +981,8 @@
 						</li>
 						<li>
 							<i class="fa fa-phone" aria-hidden="true"></i>
-							<p><a href="tel:73832488080">+7 (383) 2 48-80-80</a><br>
-								<a href="tel:73833621949">+7 (383) 362-19-49</a>
+							<p><a clsss="include-phone" href="tel:73832488080">+7 (383) 2 48-80-80</a><br>
+						<!--		<a href="tel:73833621949">+7 (383) 362-19-49</a>-->
 							</p>
 						</li>
 						<li>
@@ -1046,37 +1042,6 @@
 		<script  src="integration_vtiger/form.js"></script>
 
 		<script>
-
-
-		$("form").on("submit", function(evt) {
-			evt.preventDefault();
-			var action = $(this).attr("action");
-			var $this = $(this);
-			$.ajax({
-				url: action,
-				type: "POST",
-				data: $this.serialize(),
-				success: function(data) {
-					if($this.hasClass("pop-up")){
-						$this.addClass("answer");
-						$this.find("h2").css("display", "none");
-						$this.find("fieldset").css("display", "none");
-						$this.find(".success").removeClass("hidden-s");
-						setTimeout(function(){
-							$(".mfp-close").trigger("click");
-						}, 5000)
-					}else{
-						$this.find(".success").removeClass("hidden-s");
-						setTimeout(function(){
-							$this.find(".success").addClass("hidden-s");
-						}, 5000)
-					}
-				},
-				error: function() {
-					console.log("err")
-				},
-			})
-		});
 		</script>
 	</body>
 </html>

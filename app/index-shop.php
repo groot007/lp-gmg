@@ -1,7 +1,8 @@
 <?php
 	require_once('integration_vtiger/ModelIntegration.php');
-
-	$module_integration = new ModelIntegration();
+	$leadsource 				= 'Landing-оформление-ТЦ';
+	$calltracking 			= TRUE;
+	$module_integration = new ModelIntegration($leadsource, $calltracking);
 	$hidden_inpunt 			= $module_integration->generate_hidden_inputs();
 ?>
 
@@ -100,7 +101,7 @@
 								<div class="phone">
 									<img src="img/phone-icon.png" class="hidden-sm">
 									<div class="wrap">
-										<a class="phone-num underline popup-with-form" href="#test-form">8 (800) 123-80-80</a><br>
+										<a class="phone-num underline popup-with-form include-phone" href="#test-form">8 (800) 123-80-80</a><br>
 										<p>Мы всегда рады Вашему звонку!</p>
 									</div>
 								</div>
@@ -274,8 +275,8 @@
 							предложение для Вас!
 						</p>
 						<form class="two-fields">
-							<input type="text" placeholder="Имя">
-							<input type="text" class="phone" placeholder="Телефон">
+							<input type="text"  name="firestname" placeholder="Имя">
+							<input type="text"  name="mobile"  class="phone" placeholder="Телефон">
 							<button type="submit" class="pulse">Отправить</button>
 							<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером!
 Мы делаем все, что касается оформления рекламно-информационного изображения на любых поверхностях.</p>
@@ -323,77 +324,90 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-									<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 10 000 руб.</span>
 										</div>
-									</a>
-								<a href="img/portfolio-shop/LED/beerman/beerman-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/beerman/beerman-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/LED/beerman/beerman-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/beerman/beerman-2.jpg"></a></div>
+									</div>
+								<a href="img/portfolio-shop/complex-design/hleb/3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/hleb/3.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/hleb/4.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/hleb/4.jpg"></a></div>
+
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/LED/b2b-taxi/b2b_taxi-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/b2b-taxi/b2b_taxi-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/LED/b2b-taxi/b2b_taxi-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/b2b-taxi/b2b_taxi-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/angaria/1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/angaria/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/angaria/2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/angaria/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/angaria/3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/angaria/3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/LED/eurasia/евразия-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/eurasia/евразия-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/ambar/1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/ambar/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/ambar/2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/ambar/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/ambar/3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/ambar/3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/LED/22/2_2-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/22/2_2-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/LED/22/2_2-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/LED/22/2_2-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/batik/1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/batik/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/batik/2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/batik/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/batik/3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/batik/3.jpg"></a></div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-5 col-lg-4">
 					<div class="tabs">
-						<h3 class="underline">Объемные вывески, LED-витрины</h3>
+						<h3 class="underline">Комплексное оформление,<br>навигация</h3>
 						<div class="tab-content tab-content-1 active">
 							<a href="#" class="partner-inf active">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio-shop/LED/beerman-logo.jpg"></div>
+									<div class="picture"><img src="img/portfolio-shop/complex-design/hleb.jpg"></div>
 									<div>
-										<span>BEERMAN</span>
+										<span>НОВОСИБХЛЕБ</span>
 										<div class="other-inf">
-											РК «Лайт-боксы для машин службы доставки ресторанов Дениса Иванова BEERMAN», 2016
+											РК «Хлебушек и булочки! Оформление киосков розничной сети «Новосибхлеб», 2015
+										</div>
+									</div>
+								</div>
+							</a>
+
+							<a href="#" class="partner-inf">
+								<div class="logo">
+									<div class="picture"><img src="img/portfolio-shop/complex-design/angaria.jpg"></div>
+									<div>
+										<span>Ангария</span>
+										<div class="other-inf">
+											РК «Вкус счастливого детства! Оформление фирменных магазинов мороженого «Ангария», 2017
+										</div>
+									</div>
+								</div>
+							</a>
+
+
+							<a href="#" class="partner-inf">
+								<div class="logo">
+									<div class="picture"><img src="img/portfolio-shop/complex-design/ambar.jpg"></div>
+									<div>
+										<span>АМБАРЪ</span>
+										<div class="other-inf">
+											РК «АМБАРЪ», 2015
 										</div>
 									</div>
 								</div>
 							</a>
 							<a href="#" class="partner-inf">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio-shop/LED/b2b-taxi-logo.png"></div>
+									<div class="picture"><img src="img/portfolio-shop/complex-design/batik.jpg"></div>
 									<div>
-										<span>В2В TAXI</span>
+										<span>БАТИК</span>
 										<div class="other-inf">
-											РК «Световые короба для компании «В2В TAXI», 2015
+											Производство и монтаж вывески для оптово-розничного центра детских товаров «БАТИК», 2015
 										</div>
 									</div>
 								</div>
 							</a>
-							<a href="#" class="partner-inf">
-								<div class="logo">
-									<!-- <div class="picture"><img src="img/no-logo.jpg"></div> -->
-									<div>
-										<span>ЕВРАЗИЯ</span>
-										<div class="other-inf">
-											КР «Световая вывеска концертно-театрального зала «ЕВРАЗИЯ», 2015
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" class="partner-inf">
-								<div class="logo">
-									<!-- <div class="picture"><img src="img/no-logo.jpg"></div> -->
-									<div>
-										<span>Магазин игрушек</span>
-										<div class="other-inf">
-											РК «Магазин игрушек 2 × 2 = 5 Игры с воображением», 2016
-										</div>
-									</div>
-								</div>
-							</a>
+
+
+
+
+
 						</div>
 					</div>
 				</div>
@@ -406,44 +420,70 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-									<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 3 500 руб.</span>
 										</div>
-									</a>
-								<a href="img/portfolio-shop/complex-design/novomar/novomar-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/novomar/novomar-1.jpg"></a></div>
+									</div>
+								<a href="img/portfolio-shop/complex-design/house-agency/GJA-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/house-agency/GJA-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/house-agency/GJA-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/house-agency/GJA-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/house-agency/GJA-3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/house-agency/GJA-3.jpg"></a></div>
+							</div>
+							<div class="subslides">
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/novomar/novomar-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/novomar/novomar-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/novomar/novomar-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/novomar/novomar-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/novomar/1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/novomar/1.jpg"></a></div>
+							</div>
+
+							<div class="subslides">
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/atlant/1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/atlant/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/atlant/2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/atlant/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/atlant/3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/atlant/3.jpg"></a></div>
 							</div>
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/moscow-time/moscow-time-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/moscow-time/moscow-time-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/moscow-time/moscow-time-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/moscow-time/moscow-time-2.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/moscow-time/moscow-time-3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/moscow-time/moscow-time-3.jpg"></a></div>
 							</div>
-							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/house-agency/GJA-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/house-agency/GJA-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/house-agency/GJA-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/house-agency/GJA-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/house-agency/GJA-3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/house-agency/GJA-3.jpg"></a></div>
-							</div>
-							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/angaria/angaria-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/angaria/angaria-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/angaria/angaria-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/angaria/angaria-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/complex-design/angaria/angaria-3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/complex-design/angaria/angaria-3.jpg"></a></div>
-							</div>
+
+
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-pull-7 col-sm-5 col-md-5 col-lg-5 ">
 					<div class="tabs">
-						<h3 class="underline">Комплексное оформление</h3>
+						<h3 class="underline">Входные зоны, <br>вывески, световые короба</h3>
 						<div class="tab-content tab-content-1 active">
 							<a href="#" class="partner-inf active">
+								<div class="logo">
+									<div class="picture"><img src="img/portfolio-shop/complex-design/house-agency-logo.jpg"></div>
+									<div>
+										<span>Городское жилищное агентство</span>
+										<div class="other-inf">
+											РК «Оформление входной зоны офиса «Городского жилищного агентства», 2016
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="partner-inf ">
 								<div class="logo">
 									<div class="picture"><img src="img/portfolio-shop/complex-design/novomar-logo.jpg"></div>
 									<div>
 										<span>Новомарусино</span>
 										<div class="other-inf">
 											РК «Объемная световая входная зона для офиса продаж ЖК «Новомарусино», 2015
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="partner-inf">
+								<div class="logo">
+									<!--<div class="picture"><img src="img/portfolio-shop/complex-design/angaria-logo.jpg"></div>-->
+									<div>
+										<span>Атлант</span>
+										<div class="other-inf">
+											РК «LED-вывески для ТЦ «Атлант», 2015
 										</div>
 									</div>
 								</div>
@@ -459,28 +499,8 @@
 									</div>
 								</div>
 							</a>
-							<a href="#" class="partner-inf">
-								<div class="logo">
-									<div class="picture"><img src="img/portfolio-shop/complex-design/house-agency-logo.png"></div>
-									<div>
-										<span>Городское жилищное агентство</span>
-										<div class="other-inf">
-											РК «Оформление входной зоны офиса «Городского жилищного агентства», 2016
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" class="partner-inf">
-								<div class="logo">
-									<div class="picture"><img src="img/portfolio-shop/complex-design/angaria-logo.jpg"></div>
-									<div>
-										<span>Ангария</span>
-										<div class="other-inf">
-											РК «Вкус счастливого детства! Оформление фирменных магазинов мороженого «Ангария», 2017
-										</div>
-									</div>
-								</div>
-							</a>
+
+
 						</div>
 					</div>
 				</div>
@@ -493,37 +513,62 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-									<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 500 руб.</span>
 										</div>
-									</a>
-								<a href="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-1.jpg"></a></div>
+									</div>
+								<a href="img/portfolio-shop/entrance-zone/byte/1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/byte/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/byte/2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/byte/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/byte/3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/byte/3.jpg"></a></div>
+							</div>
+							<div class="subslides">
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/mchs/1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/mchs/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/mchs/2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/mchs/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/mchs/3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/mchs/3.jpg"></a></div>
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/mchs/4.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/mchs/4.jpg"></a></div>
+							</div>
+							<div class="subslides">
+								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/blagovesh/blagovesh-2.jpg"></a></div>
 							</div>
 							<div class="subslides">
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/baikal-service/baikal-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/baikal-service/baikal-1.jpg"></a></div>
 								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/baikal-service/baikal-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/baikal-service/baikal-2.jpg"></a></div>
 							</div>
-							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/aura/aura-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/aura/aura-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/aura/aura-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/aura/aura-2.jpg"></a></div>
-							</div>
-							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/ramos/ramos-1.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/ramos/ramos-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/ramos/ramos-2.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/ramos/ramos-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/ramos/ramos-3.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/ramos/ramos-3.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio-shop/entrance-zone/ramos/ramos-4.jpg"><img class="section-img slick-slide" src="img/portfolio-shop/entrance-zone/ramos/ramos-4.jpg"></a></div>
-							</div>
+
+
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-4">
 					<div class="tabs">
-						<h3 class="underline">Входные зоны</h3>
+						<h3 class="underline">Баннеры, стенды, <br>таблички</h3>
 						<div class="tab-content tab-content-1 active">
 							<a href="#" class="partner-inf active">
+								<div class="logo">
+									<div class="picture"><img src="img/portfolio-shop/entrance-zone/byte.jpg"></div>
+									<div>
+										<span>Байт Транзит</span>
+										<div class="other-inf">
+											РК «Байт Транзит» ребрендинг — роллерные мобильные стенды Roll up», 2017
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="partner-inf">
+								<div class="logo">
+									<div class="picture"><img src="img/portfolio-shop/entrance-zone/mchs.jpg"></div>
+									<div>
+										<span>МЧС</span>
+										<div class="other-inf">
+											РК «Оформление Сибирского спасательного центра МЧС России», 2016
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="partner-inf ">
 								<div class="logo">
 									<div class="picture"><img src="img/portfolio-shop/entrance-zone/blagovesh-logo.jpg"></div>
 									<div>
@@ -545,28 +590,8 @@
 									</div>
 								</div>
 							</a>
-							<a href="#" class="partner-inf">
-								<div class="logo">
-									<div class="picture"><img src="img/portfolio-shop/entrance-zone/aura-logo.jpg"></div>
-									<div>
-										<span>АУРА</span>
-										<div class="other-inf">
-											РК «Оформление входной зоны ТЦ «АУРА» плакатами «МегаФон», 2010
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" class="partner-inf">
-								<div class="logo">
-									<div class="picture"><img src="img/portfolio-shop/entrance-zone/ramos-logo.jpg"></div>
-									<div>
-										<span>РАМОС</span>
-										<div class="other-inf">
-											РК «Вывески для входных зон магазинов «РАМОС», 2016
-										</div>
-									</div>
-								</div>
-							</a>
+
+
 						</div>
 					</div>
 				</div>
@@ -588,7 +613,7 @@
 		<section class="any-work" id="any-work">
 			<div class="container">
 				<div class="any-work-wrap">
-				<h2><span class="text-orange">Сделаем</span> то что, нужно и как нужно!</h2>
+				<h2><span class="text-orange">Сделаем</span> то, что нужно, и как нужно!</h2>
 				<h3  id="steps-h">у нас есть все необходимые инструменты для оформления <span class="text-orange">offline-бизнеса</span></h3>
 				<h4>(магазины, киоски, офисы, мероприятия, транспорт и др.)</h4>
 					<div class="row">
@@ -661,11 +686,11 @@
 				</p>
 				<form action="" class="shop-calc">
 					<div class="group-input">
-						<input type="text" name="fio" placeholder="ФИО">
+						<input type="text" name="firstname" placeholder="ФИО">
 						<input type="text" name="company" placeholder="Компания / сайт">
 					</div>
 					<div class="group-input">
-						<input type="text" name="phone" placeholder="Телефон">
+						<input type="text" class="phone" name="mobile" placeholder="Телефон">
 						<input type="text" name="email" placeholder="E-mail">
 					</div>
 					<div class="group-input">
@@ -706,8 +731,8 @@
 						<h3 class="text-orange">Остались вопросы?</h3>
 						<p>Задайте их нашему менеджеру</p>
 						<form class="two-fields">
-							<input type="text" placeholder="Имя">
-							<input type="text" class="phone" placeholder="Телефон">
+							<input type="text"  name="firstname"  placeholder="Имя">
+							<input type="text" name="mobile" class="phone" placeholder="Телефон">
 							<button type="submit" class="pulse">Отправить</button>
 							<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером!<br><br>
 Мы делаем все, что касается оформления рекламно-информационного изображения на любых поверхностях.</p>
@@ -734,8 +759,8 @@
 						</li>
 						<li>
 							<i class="fa fa-phone" aria-hidden="true"></i>
-							<p><a href="tel:73832488080">+7 (383) 2 48-80-80</a><br>
-								<a href="tel:73833621949">+7 (383) 362-19-49</a>
+							<p class="include-phone"><a href="tel:73832488080">+7 (383) 2 48-80-80</a><br>
+							<!--	<a href="tel:73833621949">+7 (383) 362-19-49</a>-->
 							</p>
 						</li>
 						<li>
@@ -757,10 +782,10 @@
 			<fieldset style="border:0;">
 				<ol>
 					<li>
-						<input id="name" name="name" type="text" placeholder="Имя" required="">
+						<input id="name" name="firstname" type="text" placeholder="Имя" required="">
 					</li>
 					<li>
-						<input id="phone" class="phone" name="phone" type="phone" placeholder="Телефон" required="">
+						<input id="phone" class="phone" name="mobile" type="phone" placeholder="Телефон" required="">
 					</li>
 					<li>
 						<button type="submit" class="pulse">Жду звонка</button>
@@ -794,35 +819,6 @@
 		<script  src="integration_vtiger/js/watch.js"></script>
 		<script  src="integration_vtiger/form.js"></script>
 		<script>
-		$("form").on("submit", function(evt) {
-			evt.preventDefault();
-			var action = $(this).attr("action");
-			var $this = $(this);
-			$.ajax({
-				url: action,
-				type: "POST",
-				data: $this.serialize(),
-				success: function(data) {
-					if($this.hasClass("pop-up")){
-						$this.addClass("answer");
-						$this.find("h2").css("display", "none");
-						$this.find("fieldset").css("display", "none");
-						$this.find(".success").removeClass("hidden-s");
-						setTimeout(function(){
-							$(".mfp-close").trigger("click");
-						}, 5000)
-					}else{
-						$this.find(".success").removeClass("hidden-s");
-						setTimeout(function(){
-							$this.find(".success").addClass("hidden-s");
-						}, 5000)
-					}
-				},
-				error: function() {
-					console.log("err")
-				},
-			})
-		});
 		</script>
 	</body>
 </html>

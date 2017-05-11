@@ -1,6 +1,6 @@
 
 <?php 
-	$microt=microtime(true);
+	$microt = microtime(true);
 	
 //	$city=iconv('CP1251','UTF-8','Екатеринбург');
 //	$get_region="Московская облать";

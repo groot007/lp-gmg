@@ -1,7 +1,8 @@
 <?php
 	require_once('integration_vtiger/ModelIntegration.php');
-
-	$module_integration = new ModelIntegration();
+	$leadsource 				= 'Landing-реклама-на-ТС';
+	$calltracking 			= TRUE;
+	$module_integration = new ModelIntegration($leadsource, $calltracking);
 	$hidden_inpunt 			= $module_integration->generate_hidden_inputs();
 ?>
 
@@ -92,7 +93,7 @@
 								<div class="phone">
 									<img src="img/phone-icon.png" class="hidden-sm">
 									<div class="wrap">
-										<a class="phone-num underline popup-with-form" href="#test-form">8 (800) 123-80-80</a><br>
+										<a class="phone-num underline popup-with-form include-phone" href="#test-form">8 (800) 123-80-80</a><br>
 										<p>Мы всегда рады Вашему звонку!</p>
 									</div>
 								</div>
@@ -129,7 +130,7 @@
 						<div class="cols col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-2">
 							<h2 class="with-bg">Сервис</h2>
 							<p>Любая сложность проекта <br>
-								Мониторинг качества. Фотоотчеты <br>
+								Ежемесячные фотоотчеты. Контроль <br>
 								Реальные скидки до 40%. Гарантия<br>
 								<span class="text-orange">Работаем на результат!</span>
 							</p>
@@ -268,8 +269,8 @@
 							предложение для Вас!
 						</p>
 						<form class="two-fields">
-							<input type="text" placeholder="Имя" name="firstname">
-							<input type="text" name="mobile" class="phone" placeholder="Телефон">
+							<input type="text" id="firstname" placeholder="Имя" name="firstname">
+							<input type="text" id="mobile" name="mobile" class="phone" placeholder="Телефон">
 							<button type="submit" class="pulse">Отправить</button>
 							<p class="success hidden-s">Спасибо! Уже соединяем c Вашим персональным менеджером!
 <br><br>Мы делаем все, что касается оформления рекламно-информационного оформления на любых поверхностях.</p>
@@ -317,40 +318,73 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-									<a class="video-btn phone-num popup-with-form" href="#test-form">
+									<div class="video-btn phone-num popup-with-form" href="#test-form">
 										<div class="">
 											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-											<span>от 333 руб.</span>
+											<span>от 25 000 руб.</span>
 										</div>
-									</a>
-									<a href="img/portfolio/bus/outer/remond/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/1.jpg"></a>
+									</div>
+									<a class="gallery-a" href="img/portfolio/bus/outer/remond/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/2.jpg"></a>
 								</div>
 								<div class="slide-wrap gallery">
-								<a href="img/portfolio/bus/outer/remond/2.jpg">
-								<img class="section-img" data-lazy="img/portfolio/bus/outer/remond/2.jpg"></a>
+								<a class="gallery-a" href="img/portfolio/bus/outer/remond/3.jpg">
+								<img class="section-img" data-lazy="img/portfolio/bus/outer/remond/3.jpg"></a>
 								</div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/remond/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/3.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/remond/4.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/4.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/outer/remond/4.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/4.jpg"></a></div>
+								<!--<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/outer/remond/4.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/remond/4.jpg"></a></div>-->
+
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/gold-standart/gold-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/gold-standart/gold-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/gold-standart/gold-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/gold-standart/gold-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/gold-standart/gold-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/gold-standart/gold-3.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<!--<div class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 3 500 руб.</span>
+										</div>
+									</div>-->
+								<a class="gallery-a" href="img/portfolio/bus/outer/gold-standart/gold-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/gold-standart/gold-3.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<a class="gallery-a" href="img/portfolio/bus/outer/gold-standart/gold-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/gold-standart/gold-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/outer/gold-standart/gold-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/gold-standart/gold-1.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/electric-planet/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/electric-planet/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/electric-planet/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/3.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<!--<div class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 20 000 руб.</span>
+										</div>
+									</div>-->
+								<a class="gallery-a" href="img/portfolio/bus/outer/electric-planet/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/1.jpg"></a>
+								</div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/outer/electric-planet/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/outer/electric-planet/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/electric-planet/3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/vacuclub/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/vacuclub/1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/vacuclub/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/vacuclub/2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/vacuclub/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/vacuclub/3.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<!--<div class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 3 000 руб.</span>
+										</div>
+									</div>-->
+								<a class="gallery-a" href="img/portfolio/bus/outer/vacuclub/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/vacuclub/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/outer/vacuclub/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/vacuclub/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/outer/vacuclub/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/vacuclub/3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/argo200/argo-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/argo200/argo-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/argo200/argo-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/argo200/argo-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/outer/argo200/argo-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/argo200/argo-3.jpg"></a></div>
+								<div class="slide-wrap gallery">
+								<!--
+								<div class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 30 000 руб.</span>
+										</div>
+									</div>
+									-->
+								<a class="gallery-a" href="img/portfolio/bus/outer/argo200/argo-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/argo200/argo-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/outer/argo200/argo-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/argo200/argo-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/outer/argo200/argo-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/outer/argo200/argo-3.jpg"></a></div>
 							</div>
 						</div>
 					</div>
@@ -358,20 +392,40 @@
 						<div class="works-slide inner">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-								<a class="video-btn phone-num popup-with-form" href="#test-form">
+								<div class="video-btn phone-num popup-with-form" href="#test-form">
 									<div class="">
 										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-										<span>от 333 руб.</span>
+										<span>от 850 руб.</span>
 									</div>
-								</a>
-								<a href="img/portfolio/bus/inner/be-women/be-women-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/be-women/be-women-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/inner/be-women/be-women-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/be-women/be-women-2.jpg"></a></div>							</div>
-							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/inner/continent/continent-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/continent/continent-1.jpg"></a></div>
+								</div>
+								<a class="gallery-a" href="img/portfolio/bus/inner/gja/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/gja/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/inner/gja/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/gja/1.jpg"></a></div>
+
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/inner/your-new-pharmacy/pharmacy-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/your-new-pharmacy/pharmacy-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus/inner/your-new-pharmacy/pharmacy-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/your-new-pharmacy/pharmacy-2.jpg"></a></div>							</div>
+								<div class="slide-wrap gallery">
+								<!--<div class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 3 500 руб.</span>
+										</div>
+									</a>-->
+								<a class="gallery-a" href="img/portfolio/bus/inner/centr/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/centr/1.jpg"></a></div>
+
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/inner/centr/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/centr/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/inner/centr/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/centr/3.jpg"></a></div>
+
+							</div>
+							<div class="subslides">
+								<div class="slide-wrap gallery">
+								<!--<div class="video-btn phone-num popup-with-form" href="#test-form">
+										<div class="">
+											<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
+											<span>от 8 500 руб.</span>
+										</div>
+									</a>-->
+								<a class="gallery-a" href="img/portfolio/bus/inner/your-new-pharmacy/pharmacy-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/your-new-pharmacy/pharmacy-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus/inner/your-new-pharmacy/pharmacy-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus/inner/your-new-pharmacy/pharmacy-2.jpg"></a></div>							</div>
 						</div>
 					</div>
 				</div>
@@ -442,22 +496,22 @@
 						<div class="tab-content tab-content-2">
 							<a href="#" class="partner-inf active">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio/bus/inner/be-women-logo.jpg"></div>
+									<div class="picture"><img src="img/portfolio/bus/inner/gja.png"></div>
 									<div>
-										<span>Be woman</span>
+										<span>ГЖА ЦИП</span>
 										<div class="other-inf">
-											РК «Легкий путь к красоте и стройности», 2011
+											РК «Продать, купить или обменять квартиру поможет ГЖА», 2016
 										</div>
 									</div>
 								</div>
 							</a>
 							<a href="#" class="partner-inf">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio/bus/inner/continent-logo.png"></div>
+									<div class="picture"><img src="img/portfolio/bus/inner/centr.png"></div>
 									<div>
-										<span>Континент</span>
+										<span>Центрофинанс</span>
 										<div class="other-inf">
-											РК «Мир сильных впечатлений на UNIVERSAL Channel», 2011
+											Подголовники «Центрофинанс», 2016
 										</div>
 									</div>
 								</div>
@@ -485,24 +539,24 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-								<a class="video-btn phone-num popup-with-form" href="#test-form">
+								<div class="video-btn phone-num popup-with-form" href="#test-form">
 									<div class="">
 										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-										<span>от 333 руб.</span>
+										<span>от 12 000 руб.</span>
 									</div>
-								</a>
-								<a href="img/portfolio/bus-taxi/outer/bellona/bellona-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bellona/bellona-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/outer/bellona/bellona-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bellona/bellona-2.jpg"></a></div>
+								</div>
+								<a class="gallery-a" href="img/portfolio/bus-taxi/outer/pos/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/pos/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/outer/pos/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/pos/2.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/outer/eldorado/eldorado-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/eldorado/eldorado-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/outer/eldorado/eldorado-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/eldorado/eldorado-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/outer/eldorado/eldorado-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/eldorado/eldorado-3.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/outer/bl/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bl/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/outer/bl/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bl/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/outer/bl/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bl/3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/outer/komatsu/komatsu-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/komatsu/komatsu-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/outer/komatsu/komatsu-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/komatsu/komatsu-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/outer/komatsu/komatsu-3.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/komatsu/komatsu-3.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/outer/bee/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bee/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/outer/bee/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bee/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/outer/bee/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/outer/bee/3.jpg"></a></div>
 							</div>
 						</div>
 					</div>
@@ -510,20 +564,23 @@
 						<div class="works-slide inner">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-								<a class="video-btn phone-num popup-with-form" href="#test-form">
+								<div class="video-btn phone-num popup-with-form" href="#test-form">
 									<div class="">
 										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-										<span>от 333 руб.</span>
+										<span>от 180 руб.</span>
 									</div>
-								</a>
-								<a href="img/portfolio/bus-taxi/inner/five-lake/five-lake-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/five-lake/five-lake-1.jpg"></a></div>
+								</div>
+								<a class="gallery-a" href="img/portfolio/bus-taxi/inner/batik/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/batik/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/inner/batik/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/batik/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/inner/batik/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/batik/3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/inner/protection-center/protection-center-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/protection-center/protection-center-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/inner/protection-center/protection-center-2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/protection-center/protection-center-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/inner/leroy/1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/leroy/1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/inner/leroy/2.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/leroy/2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/inner/leroy/3.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/leroy/3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/bus-taxi/inner/ttk/ttk-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/ttk/ttk-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/bus-taxi/inner/ttk/ttk-1.jpg"><img class="section-img" data-lazy="img/portfolio/bus-taxi/inner/ttk/ttk-1.jpg"></a></div>
 							</div>
 						</div>
 					</div>
@@ -538,33 +595,33 @@
 						<div class="tab-content tab-content-1 active">
 							<a href="#" class="partner-inf active">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio/bus-taxi/outer/bellona-logo.png"></div>
+									<div class="picture"><img src="img/portfolio/bus-taxi/outer/pos.jpg"></div>
 									<div>
-										<span>Bellona</span>
+										<span>Посуда центр</span>
 										<div class="other-inf">
-											РК «Bellona — наша мебель дороже, чем стоит!», 2013
+											РК «Всё для дома всегда выгодно!», 2017
 										</div>
 									</div>
 								</div>
 							</a>
 							<a href="#" class="partner-inf">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio/bus-taxi/outer/komatsu-logo.jpg"></div>
+									<div class="picture"><img src="img/portfolio-shop/entrance-zone/blagovesh-logo.jpg"></div>
 									<div>
-										<span>KOMATSU</span>
+										<span>Благовещенка</span>
 										<div class="other-inf">
-											РК «KOMATSU — качество, которому можно доверять», 2015
+											РК «Микрорайон БЛАГОВЕЩЕНКА — островок спокойствия в городской суете», 2016
 										</div>
 									</div>
 								</div>
 							</a>
 							<a href="#" class="partner-inf">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio/bus-taxi/outer/eldorado-logo.png"></div>
+									<div class="picture"><img src="img/portfolio/bus/outer/beeline-logo.jpg"></div>
 									<div>
-										<span>Эльдорадо</span>
+										<span>Билайн</span>
 										<div class="other-inf">
-											РК «Доставка, установка и ремонт техники с «Эльдорадо Сервис», 2016
+											РК «4G-интернет «Билайн» супербыстрый, как Wi-Fi», 2016
 										</div>
 									</div>
 								</div>
@@ -573,22 +630,22 @@
 						<div class="tab-content tab-content-2">
 							<a href="#" class="partner-inf active">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio/bus-taxi/inner/five-lake-logo.jpg"></div>
+									<div class="picture"><img src="img/portfolio/bus-taxi/inner/batik.jpg"></div>
 									<div>
-										<span>5 Озер</span>
+										<span>БАТИК</span>
 										<div class="other-inf">
-											РК «Совершенство чистой воды», 2010
+											РК «Новый магазин «БАТИК», 2015
 										</div>
 									</div>
 								</div>
 							</a>
 							<a href="#" class="partner-inf ">
 								<div class="logo">
-									<div class="picture"><img src="img/portfolio/bus-taxi/inner/protection-center-logo.jpg"></div>
+									<div class="picture"><img src="img/portfolio/bus-taxi/inner/leroy.jpg"></div>
 									<div>
-										<span>Единый центр защиты</span>
+										<span>Леруа Мерлен</span>
 										<div class="other-inf">
-											РК «Защита прав заемщиков; банкротство физических лиц», 2016
+											РК «Новый адрес низких цен!», 2016
 										</div>
 									</div>
 								</div>
@@ -616,21 +673,21 @@
 						<div class="works-slide">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-								<a class="video-btn phone-num popup-with-form" href="#test-form">
+								<div class="video-btn phone-num popup-with-form" href="#test-form">
 									<div class="">
 										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-										<span>от 333 руб.</span>
+										<span>от 28 550 руб.</span>
 									</div>
-								</a>
-								<a href="img/portfolio/tram/outer/shreya/shreya-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/outer/shreya/shreya-2.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-2.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/outer/shreya/shreya-3.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-3.jpg"></a></div>
+								</div>
+								<a class="gallery-a" href="img/portfolio/tram/outer/shreya/shreya-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/tram/outer/shreya/shreya-2.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/tram/outer/shreya/shreya-3.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/shreya/shreya-3.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/outer/valio/valio-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/valio/valio-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/tram/outer/valio/valio-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/valio/valio-1.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/outer/unispaz/unispaz-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/unispaz/unispaz-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/tram/outer/unispaz/unispaz-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/outer/unispaz/unispaz-1.jpg"></a></div>
 							</div>
 						</div>
 					</div>
@@ -638,21 +695,21 @@
 						<div class="works-slide inner">
 							<div class="subslides">
 								<div class="slide-wrap gallery">
-								<a class="video-btn phone-num popup-with-form" href="#test-form">
+								<div class="video-btn phone-num popup-with-form" href="#test-form">
 									<div class="">
 										<span class="play"><i class="fa fa-ruble" aria-hidden="true"></i></span>
-										<span>от 333 руб.</span>
+										<span>от 180 руб.</span>
 									</div>
-								</a>
-								<a href="img/portfolio/tram/inner/alpha/alfa-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/alpha/alfa-1.jpg"></a></div>
+								</div>
+								<a class="gallery-a" href="img/portfolio/tram/inner/alpha/alfa-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/alpha/alfa-1.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/inner/hot-thing/hot-thing-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/hot-thing/hot-thing-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/inner/hot-thing/hot-thing-2.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/hot-thing/hot-thing-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/tram/inner/hot-thing/hot-thing-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/hot-thing/hot-thing-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/tram/inner/hot-thing/hot-thing-2.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/hot-thing/hot-thing-2.jpg"></a></div>
 							</div>
 							<div class="subslides">
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/inner/style/style-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/style/style-1.jpg"></a></div>
-								<div class="slide-wrap gallery"><a href="img/portfolio/tram/inner/style/style-2.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/style/style-2.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/tram/inner/style/style-1.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/style/style-1.jpg"></a></div>
+								<div class="slide-wrap gallery"><a class="gallery-a" href="img/portfolio/tram/inner/style/style-2.jpg"><img class="section-img" data-lazy="img/portfolio/tram/inner/style/style-2.jpg"></a></div>
 							</div>
 						</div>
 					</div>
@@ -1045,11 +1102,11 @@
 								<div class="step fourth-step">
 									<span class="circle-num">04</span>
 									<div class="left-group">
-										<input type="text" name="firstname" placeholder="ФИО">
+										<input type="text" id="firstname" name="firstname" placeholder="ФИО">
 										<input type="text" name="mobile" class="phone" placeholder="Телефон">
 									</div>
 									<div class="right-group">
-										<input type="text" name="website" placeholder="Компания / Сайт">
+										<input type="text" name="company" placeholder="Компания / Сайт">
 										<input type="text" name="email" placeholder="E-mail">
 									</div>
 								</div>
@@ -1077,7 +1134,7 @@
 					<h2 class="underline light"><strong>Нашему агентству <span class="text-orange">8 лет</span></strong></h2>
 					<div class="inf-about">
 						<p>Честно. С любовью. Как для себя.
-							Наша основная специализация - делать рекламу, которая работает!
+							Наша основная специализация — делать рекламу, которая работает!
 						</p>
 						<p>
 							За это время разработали с нуля тысячи проектов, запустили рекламу на сотни тысяч
@@ -1127,8 +1184,8 @@
 						</li>
 						<li>
 							<i class="fa fa-phone" aria-hidden="true"></i>
-							<p><a href="tel:73832488080">+7 (383) 2 48-80-80</a><br>
-								<a href="tel:73833621949">+7 (383) 362-19-49</a>
+							<p><a class="include-phone" href="tel:73832488080">+7 (383) 2 48-80-80</a><br>
+						<!--		<a href="tel:73833621949">+7 (383) 362-19-49</a>-->
 							</p>
 						</li>
 						<li>
@@ -1183,39 +1240,12 @@
 		<script  src="libs/ZeroClipboard.js"></script> -->
 		<script defer src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 		<script  defer src="js/geolocation.js"></script>
+
+		</script>
 		<script  src="js/scripts.min.js"></script>
 		<script  src="integration_vtiger/js/watch.js"></script>
 		<script  src="integration_vtiger/form.js"></script>
 		<script>
-		$("form").on("submit", function(evt) {
-			evt.preventDefault();
-			var action = $(this).attr("action");
-			var $this = $(this);
-			$.ajax({
-				url: action,
-				type: "POST",
-				data: $this.serialize(),
-				success: function(data) {
-					if($this.hasClass("pop-up")){
-						$this.addClass("answer");
-						$this.find("h2").css("display", "none");
-						$this.find("fieldset").css("display", "none");
-						$this.find(".success").removeClass("hidden-s");
-						setTimeout(function(){
-							$(".mfp-close").trigger("click");
-						}, 5000)
-					}else{
-						$this.find(".success").removeClass("hidden-s");
-						setTimeout(function(){
-							$this.find(".success").addClass("hidden-s");
-						}, 5000)
-					}
-				},
-				error: function() {
-					console.log("err")
-				},
-			})
-		});
 		</script>
 	</body>
 </html>
